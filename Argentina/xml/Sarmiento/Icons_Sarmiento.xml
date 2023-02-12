@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<IconTextureAtlases>
+		<Row Name="ICON_ATLAS_LEU_SARMIENTO" 		IconSize="32"  IconsPerRow="1" IconsPerColumn="1" Filename="Icon_LEU_Sarmiento_32"/>
+		<Row Name="ICON_ATLAS_LEU_SARMIENTO" 		IconSize="45"  IconsPerRow="1" IconsPerColumn="1" Filename="Icon_LEU_Sarmiento_45"/>
+		<Row Name="ICON_ATLAS_LEU_SARMIENTO" 		IconSize="48"  IconsPerRow="1" IconsPerColumn="1" Filename="Icon_LEU_Sarmiento_48"/>
+		<Row Name="ICON_ATLAS_LEU_SARMIENTO" 		IconSize="50"  IconsPerRow="1" IconsPerColumn="1" Filename="Icon_LEU_Sarmiento_50"/>
+		<Row Name="ICON_ATLAS_LEU_SARMIENTO" 		IconSize="55"  IconsPerRow="1" IconsPerColumn="1" Filename="Icon_LEU_Sarmiento_55"/>
+		<Row Name="ICON_ATLAS_LEU_SARMIENTO" 		IconSize="64"  IconsPerRow="1" IconsPerColumn="1" Filename="Icon_LEU_Sarmiento_64"/>
+		<Row Name="ICON_ATLAS_LEU_SARMIENTO" 		IconSize="80"  IconsPerRow="1" IconsPerColumn="1" Filename="Icon_LEU_Sarmiento_80"/>
+		<Row Name="ICON_ATLAS_LEU_SARMIENTO" 		IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="Icon_LEU_Sarmiento_256"/>
+		<Row Name="ICON_ATLAS_LEU_SARMIENTO_CIV"	IconSize="45"  IconsPerRow="1" IconsPerColumn="1" Filename="Icon_LEU_Sarmiento_Civ_45"/>
+	</IconTextureAtlases>
+	<IconDefinitions>
+		<Row Name="ICON_LEADER_LEU_SARMIENTO" Atlas="ICON_ATLAS_LEU_SARMIENTO" Index="0"/>
+		<Row Name="ICON_LEADER_LEU_SARMIENTO_CIV" Atlas="ICON_ATLAS_LEU_SARMIENTO_CIV" Index="0"/>
+	</IconDefinitions>
+</GameData>

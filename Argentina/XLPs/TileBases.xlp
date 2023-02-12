@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>1</major>
+		<minor>0</minor>
+		<build>0</build>
+		<revision>0</revision>
+	</m_Version>
+	<m_ClassName text="TileBase"/>
+	<m_PackageName text="landmarks/tilebases"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="RES_Cattle_Bld_C"/>
+			<m_ObjectName text="RES_Cattle_Bld_C"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Arrabal_Normal_03"/>
+			<m_ObjectName text="Arrabal_Normal_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Arrabal_Normal_04"/>
+			<m_ObjectName text="Arrabal_Normal_04"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Arrabal_Normal_05"/>
+			<m_ObjectName text="Arrabal_Normal_05"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Arrabal_Normal_06"/>
+			<m_ObjectName text="Arrabal_Normal_06"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Arrabal_Poor_01"/>
+			<m_ObjectName text="Arrabal_Poor_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Arrabal_Poor_02"/>
+			<m_ObjectName text="Arrabal_Poor_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Arrabal_Poor_03"/>
+			<m_ObjectName text="Arrabal_Poor_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Arrabal_Poor_04"/>
+			<m_ObjectName text="Arrabal_Poor_04"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Arrabal_Poor_05"/>
+			<m_ObjectName text="Arrabal_Poor_05"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caminito_01"/>
+			<m_ObjectName text="Caminito_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_Arrabal_01"/>
+			<m_ObjectName text="DIS_Arrabal_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_Arrabal_02"/>
+			<m_ObjectName text="DIS_Arrabal_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_Arrabal_03"/>
+			<m_ObjectName text="DIS_Arrabal_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_Arrabal_04"/>
+			<m_ObjectName text="DIS_Arrabal_04"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_Arrabal_05"/>
+			<m_ObjectName text="DIS_Arrabal_05"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ESTANCIA_Ancient_00"/>
+			<m_ObjectName text="DIS_ESTANCIA_Ancient_00"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ESTANCIA_Ancient_02"/>
+			<m_ObjectName text="DIS_ESTANCIA_Ancient_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ESTANCIA_Building"/>
+			<m_ObjectName text="DIS_ESTANCIA_Building"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ESTANCIA_Classical_01"/>
+			<m_ObjectName text="DIS_ESTANCIA_Classical_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ESTANCIA_Classical_02"/>
+			<m_ObjectName text="DIS_ESTANCIA_Classical_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ESTANCIA_Classical_03"/>
+			<m_ObjectName text="DIS_ESTANCIA_Classical_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ESTANCIA_Cow_01"/>
+			<m_ObjectName text="DIS_ESTANCIA_Cow_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ESTANCIA_Cow_02"/>
+			<m_ObjectName text="DIS_ESTANCIA_Cow_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ESTANCIA_Industrial_01"/>
+			<m_ObjectName text="DIS_ESTANCIA_Industrial_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ESTANCIA_Industrial_02"/>
+			<m_ObjectName text="DIS_ESTANCIA_Industrial_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ESTANCIA_Industrial_03"/>
+			<m_ObjectName text="DIS_ESTANCIA_Industrial_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ESTANCIA_Industrial_04"/>
+			<m_ObjectName text="DIS_ESTANCIA_Industrial_04"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ESTANCIA_Mate_Plantation"/>
+			<m_ObjectName text="ESTANCIA_Mate_Plantation"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RES_Cattle_Bld_A"/>
+			<m_ObjectName text="RES_Cattle_Bld_A"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Arrabal_Nice_02"/>
+			<m_ObjectName text="Arrabal_Nice_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Arrabal_Nice_03"/>
+			<m_ObjectName text="Arrabal_Nice_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Arrabal_Normal_01"/>
+			<m_ObjectName text="Arrabal_Normal_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Arrabal_Normal_02"/>
+			<m_ObjectName text="Arrabal_Normal_02"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

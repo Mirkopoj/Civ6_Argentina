@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>1</major>
+		<minor>0</minor>
+		<build>0</build>
+		<revision>0</revision>
+	</m_Version>
+	<m_ClassName text="LeaderFallback"/>
+	<m_PackageName text="LeaderFallbacks"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="FALLBACK_NEUTRAL_LEU_ROCA"/>
+			<m_ObjectName text="FALLBACK_NEUTRAL_LEU_ROCA"/>
+		</Element>
+		<Element>
+			<m_EntryID text="FALLBACK_NEUTRAL_LEU_SANMARTIN"/>
+			<m_ObjectName text="FALLBACK_NEUTRAL_LEU_SANMARTIN"/>
+		</Element>
+		<Element>
+			<m_EntryID text="FALLBACK_NEUTRAL_LEU_SARMIENTO"/>
+			<m_ObjectName text="FALLBACK_NEUTRAL_LEU_SARMIENTO"/>
+		</Element>
+		<Element>
+			<m_EntryID text="FALLBACK_WAR_LEU_ROCA"/>
+			<m_ObjectName text="FALLBACK_WAR_LEU_ROCA"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+
