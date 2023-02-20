@@ -5,29 +5,12 @@
 	</LoadingInfo>
 	
 	<Types>
-		<Row Type="LEADER_MRK_SARMIENTO" Kind="KIND_LEADER" />
 		<Row Type="TRAIT_CIVILIZATION_BUILDING_MRK_BIB_POPULAR" Kind="KIND_TRAIT" />
 	</Types>
-
-	<Leaders>
-		<Row>
-			<LeaderType>LEADER_MRK_SARMIENTO</LeaderType>
-			<Name>LOC_LEADER_MRK_SARMIENTO_NAME</Name>
-			<InheritFrom>LEADER_DEFAULT</InheritFrom>
-		</Row>
-	</Leaders>
-
-	<LeaderQuotes>
-		<Row LeaderType="LEADER_MRK_SARMIENTO" Quote="LOC_LEADER_MRK_SARMIENTO_QUOTE"/>
-	</LeaderQuotes>
 
 	<LeaderTraits>
 		<Row LeaderType="LEADER_MRK_SARMIENTO" TraitType="TRAIT_CIVILIZATION_BUILDING_MRK_BIB_POPULAR" />
 	</LeaderTraits>
-
-	<CivilizationLeaders>
-		<Row CivilizationType="CIVILIZATION_LEU_ARGENTINA" LeaderType="LEADER_MRK_SARMIENTO" CapitalName="LOC_CITY_NAME_LEU_ARGENTINA_01" />
-	</CivilizationLeaders>
 
 	<Traits>
 		<Row TraitType="TRAIT_CIVILIZATION_BUILDING_MRK_BIB_POPULAR" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER" />
