@@ -21,7 +21,6 @@
 	</Players>
 	<PlayerItems>
 		<Row>
-			<Domain>StandardPlayers</Domain>
 			<CivilizationType>CIVILIZATION_LEU_ARGENTINA</CivilizationType>
 			<LeaderType>LEADER_MRK_SARMIENTO</LeaderType>
 			<Type>BUILDING_MRK_BIB_POPULAR</Type>
