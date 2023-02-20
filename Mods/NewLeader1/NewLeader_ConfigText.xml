@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<LocalizedText>
-		<Row Tag="LOC_CIVILIZATION_LEU_ARGENTINA_NAME" Language="en_US">
-			<Text>The Felines</Text>
-		</Row>
-		
-		<Row Tag="LOC_CIVILIZATION_LEU_ARGENTINA_DESCRIPTION" Language="en_US">
-			<Text>The Majestic Felines</Text>
-		</Row>
-
-		<Row Tag="LOC_CIVILIZATION_LEU_ARGENTINA_ADJECTIVE" Language="en_US">
-			<Text>Feline</Text>
-		</Row>
-		
+	<LocalizedText>	
 		<Row Tag="LOC_LEADER_JASPER_KITTY_NAME" Language="en_US">
 			<Text>Jasper Kitty</Text>
-		</Row>
-
-		<Row Tag="LOC_TRAIT_CIVILIZATION_LEU_ARGENTINA_NAME" Language="en_US">
-			<Text>Cat like reflexes</Text>
-		</Row>
-		<Row Tag="LOC_TRAIT_CIVILIZATION_LEU_ARGENTINA_DESCRIPTION" Language="en_US">
-			<Text>So fast!</Text>
 		</Row>
 		
 		<Row Tag="LOC_TRAIT_LEADER_JASPER_KITTY_NAME" Language="en_US">
