@@ -17,7 +17,7 @@ INSERT INTO Building_YieldCHanges
 VALUES	('BUILDING_MRK_BIB_POPULAR',	'YIELD_SCIENCE',	0);
 
 INSERT INTO Building_GreatPersonPoints
-			(BuildingType,				GreatPersonClasstype,			PointsPerTurn)
-SELECT		'BUILDING_MRK_BIB_POPULAR',	GreatPersonClasstype,			PointsPerTurn,
+			(BuildingType,				GreatPersonClassType,			PointsPerTurn)
+SELECT		'BUILDING_MRK_BIB_POPULAR',	GreatPersonClassType,			PointsPerTurn,
 			'BUILDING_MRK_BIB_POPULAR',	'GREAT_PERSON_CLASS_WRITER',	PointsPerTurn;
 FROM Building_GreatPersonPoints WHERE BuildingType = 'BUILDING_LIBRARY';
