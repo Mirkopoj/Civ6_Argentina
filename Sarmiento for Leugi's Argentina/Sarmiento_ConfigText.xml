@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>	
+		<Row Tag="LOC_LEADER_MRK_SARMIENTO_NAME" Language="en_US">
+			<Text>Domingo Faustino Sarmiento</Text>
+		</Row>
+		
+		<Row Tag="LOC_TRAIT_LEADER_MRK_SARMIENTO_NAME" Language="en_US">
+			<Text>Civilización y Barbarie</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_LEADER_MRK_SARMIENTO_DESCRIPTION" Language="en_US">
+			<Text>Combat victories generate [ICON_SCIENCE] science equal to the defeted unit's [ICON_STRENGTH] combat strength. +5 [ICON_STRENGTH] combat strength agains barbarians.</Text>
+		</Row>
+
+		<Row Tag="LOC_BUILDING_MRK_BIB_POPULAR_NAME" Language="en_US">
+			<Text>Biblioteca Popular</Text>
+		</Row>
+		
+		<Row Tag="LOC_BUILDING_MRK_BIB_POPULAR_DESCRIPTION" Language="en_US">
+			<Text>Replaces the library.</Text>
+		</Row>
+	</LocalizedText>
+</GameData>
