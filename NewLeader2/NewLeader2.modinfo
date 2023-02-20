@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="d94607e1-c75a-4522-8e7c-6120de0be1ef" version="1">
+  <Properties>
+    <Name>$name$</Name>
+    <Description>This example mod demonstrates how to add a new leader and civilization to the game.</Description>
+    <Created>1676933464</Created>
+    <Teaser>This example mod demonstrates how to add a new leader and civilization to the game.</Teaser>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <ActionCriteria>
+    <Criteria id="LeaderCriteria">
+      <LeaderPlayable>StandardPlayers::LEADER_JASPER_KITTY</LeaderPlayable>
+    </Criteria>
+  </ActionCriteria>
+  <FrontEndActions>
+    <UpdateDatabase id="Config">
+      <File>NewLeader_Config.xml</File>
+    </UpdateDatabase>
+    <UpdateText id="ConfigText">
+      <File>NewLeader_ConfigText.xml</File>
+    </UpdateText>
+    <UpdateIcons id="ConfigIcons">
+      <File>NewLeader_Icons.xml</File>
+    </UpdateIcons>
+    <UpdateArt id="ConfigArt">
+      <File>NewLeader2.dep</File>
+    </UpdateArt>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="Gameplay">
+      <Criteria>LeaderCriteria</Criteria>
+      <File>NewLeader_Felines.xml</File>
+      <File>NewLeader_JasperKitty.xml</File>
+      <File>NewLeader_LitterBox.xml</File>
+    </UpdateDatabase>
+    <UpdateText id="Text">
+      <Criteria>LeaderCriteria</Criteria>
+      <File>NewLeader_ConfigText.xml</File>
+      <File>NewLeader_Text.xml</File>
+    </UpdateText>
+    <UpdateIcons id="Icons">
+      <Criteria>LeaderCriteria</Criteria>
+      <File>NewLeader_Icons.xml</File>
+    </UpdateIcons>
+    <UpdateArt id="Art">
+      <Criteria>LeaderCriteria</Criteria>
+      <File>NewLeader2.dep</File>
+    </UpdateArt>
+  </InGameActions>
+  <Files>
+    <File>ArtDefs/FallbackLeaders.artdef</File>
+    <File>NewLeader2.dep</File>
+    <File>NewLeader_Config.xml</File>
+    <File>NewLeader_ConfigText.xml</File>
+    <File>NewLeader_Felines.xml</File>
+    <File>NewLeader_Icons.xml</File>
+    <File>NewLeader_JasperKitty.xml</File>
+    <File>NewLeader_LitterBox.xml</File>
+    <File>NewLeader_Text.xml</File>
+    <File>Platforms/MacOS/BLPs/LeaderFallbacks.blp</File>
+    <File>Platforms/MacOS/BLPs/UILeaders.blp</File>
+    <File>Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
+    <File>Platforms/Windows/BLPs/UILeaders.blp</File>
+  </Files>
+</Mod>
