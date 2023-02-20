@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
+	<LoadingInfo>
+		<Row LeaderType="LEADER_MRK_SARMIENTO" ForegroundImage="LEADER_LEU_SANMARTIN.dds" PlayDawnOfManAudio="0" BackgroundImage="LEADER_HOJO_BACKGROUND.dds"/>
+	</LoadingInfo>
+	
 	<Types>
 		<Row Type="LEADER_MRK_SARMIENTO" Kind="KIND_LEADER" />
 		<Row Type="TRAIT_CIVILIZATION_BUILDING_MRK_BIB_POPULAR" Kind="KIND_TRAIT" />
@@ -17,13 +21,13 @@
 		<Row LeaderType="LEADER_MRK_SARMIENTO" Quote="LOC_LEADER_MRK_SARMIENTO_QUOTE"/>
 	</LeaderQuotes>
 
-	<CivilizationLeaders>
-		<Row CivilizationType="CIVILIZATION_LEU_ARGENTINA" LeaderType="LEADER_MRK_SARMIENTO" CapitalName="LOC_CITY_NAME_LEU_ARGENTINA_01" />
-	</CivilizationLeaders>
-
 	<LeaderTraits>
 		<Row LeaderType="LEADER_MRK_SARMIENTO" TraitType="TRAIT_CIVILIZATION_BUILDING_MRK_BIB_POPULAR" />
 	</LeaderTraits>
+
+	<CivilizationLeaders>
+		<Row CivilizationType="CIVILIZATION_LEU_ARGENTINA" LeaderType="LEADER_MRK_SARMIENTO" CapitalName="LOC_CITY_NAME_LEU_ARGENTINA_01" />
+	</CivilizationLeaders>
 
 	<Traits>
 		<Row TraitType="TRAIT_CIVILIZATION_BUILDING_MRK_BIB_POPULAR" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER" />
