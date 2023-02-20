@@ -2,6 +2,7 @@
 <GameData>
 	<Types>
 		<Row Type="LEADER_MRK_SARMIENTO" Kind="KIND_LEADER" />
+		<Row Type="TRAIT_CIVILIZATION_BUILDING_MRK_BIB_POPULAR" Kind="KIND_TRAIT" />
 	</Types>
 
 	<Leaders>
