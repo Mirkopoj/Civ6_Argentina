@@ -3,7 +3,7 @@
   <Properties>
     <Name>Sarmiento for Leugi's Argentina</Name>
     <Description>This example mod demonstrates how to add a new leader and civilization to the game.</Description>
-    <Created>1676924396</Created>
+    <Created>1676930603</Created>
     <Teaser>Adds Domingo Faustino Sarmiento as an alternative leader for Leugi's Argentina.</Teaser>
     <Authors>TheOtherOne</Authors>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
@@ -14,13 +14,13 @@
     </Criteria>
   </ActionCriteria>
   <FrontEndActions>
-    <UpdateDatabase id="Config">
+    <UpdateDatabase id="Sarmiento_Config_FE_MRK">
       <File>xml/Sarmiento_Config.xml</File>
     </UpdateDatabase>
-    <UpdateText id="ConfigText">
+    <UpdateText id="Sarmiento_ConfigText_FE_MRK">
       <File>xml/Sarmiento_ConfigText.xml</File>
     </UpdateText>
-    <UpdateIcons id="ConfigIcons">
+    <UpdateIcons id="Sarmiento_ConfigIcons_FE_MRK">
       <File>xml/Sarmiento_Icons.xml</File>
     </UpdateIcons>
     <UpdateArt id="ConfigArt">
@@ -28,22 +28,22 @@
     </UpdateArt>
   </FrontEndActions>
   <InGameActions>
-    <UpdateDatabase id="Gameplay">
+    <UpdateDatabase id="Sarmiento_y_Biblio_MRK">
       <Criteria>LeaderCriteria</Criteria>
       <File>xml/Sarmiento.xml</File>
-      <File>xml/Sarmiento_BibliPopular.xml</File>
       <File>sql/Leader_Sarmiento.sql</File>
+      <File>sql/BiblioPopular.sql</File>
     </UpdateDatabase>
-    <UpdateText id="Text">
+    <UpdateText id="Sarmiento_Text_MRK">
       <Criteria>LeaderCriteria</Criteria>
       <File>xml/Sarmiento_ConfigText.xml</File>
       <File>xml/Sarmiento_Text.xml</File>
     </UpdateText>
-    <UpdateIcons id="Icons">
+    <UpdateIcons id="Sarmiento_Icons_MRK">
       <Criteria>LeaderCriteria</Criteria>
       <File>xml/Sarmiento_Icons.xml</File>
     </UpdateIcons>
-    <UpdateArt id="Art">
+    <UpdateArt id="Sarmiento_Art_MRK">
       <Criteria>LeaderCriteria</Criteria>
       <File>Sarmiento for Leugi's Argentina.dep</File>
     </UpdateArt>
