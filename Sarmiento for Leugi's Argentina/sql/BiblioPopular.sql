@@ -4,7 +4,7 @@
 --------------------------------------------------------------
 
 INSERT INTO Types
-		(Type,											Kind)
+		(Type,							Kind)
 VALUES	('BUILDING_MRK_BIB_POPULAR',	'KIND_BUILDING');
 
 INSERT INTO Buildings
@@ -17,7 +17,7 @@ INSERT INTO Building_YieldCHanges
 VALUES	('BUILDING_MRK_BIB_POPULAR',	'YIELD_SCIENCE',	0);
 
 INSERT INTO Building_GreatPersonPoints
-			(BuildingType,									GreatPersonClasstype,			PointsPerTurn)
+			(BuildingType,				GreatPersonClasstype,			PointsPerTurn)
 SELECT		'BUILDING_MRK_BIB_POPULAR',	GreatPersonClasstype,			PointsPerTurn,
 			'BUILDING_MRK_BIB_POPULAR',	'GREAT_PERSON_CLASS_WRITER',	PointsPerTurn;
 FROM Building_GreatPersonPoints WHERE BuildingType = 'BUILDING_LIBRARY';
