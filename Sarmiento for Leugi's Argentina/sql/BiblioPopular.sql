@@ -8,12 +8,12 @@ INSERT INTO Types
 VALUES	('BUILDING_MRK_BIB_POPULAR',	'KIND_BUILDING');
 
 INSERT INTO Buildings
-			(BuildingType,									Name,													Description,													PrereqTech,	PurchaseYield,	Cost,	AdvisorType,	Maintenance, CitizenSlots)
+			(BuildingType,				Name,									Description,								PrereqTech,	PurchaseYield,	Cost,	AdvisorType,	Maintenance, CitizenSlots)
 SELECT		'BUILDING_MRK_BIB_POPULAR',	'LOC_BUILDING_MRK_BIB_POPULAR_NAME',	'LOC_BUILDING_MRK_BIB_POPULAR_DESCRIPTION',	PrereqTech,	PurchaseYield,	Cost,	AdvisorType,	Maintenance, CitizenSlots
 FROM Buildings WHERE BuildingType = 'BUILDING_LIBRARY';
 
 INSERT INTO Building_YieldCHanges
-		(BuildingType,									YieldType,			YieldChange)
+		(BuildingType,					YieldType,			YieldChange)
 VALUES	('BUILDING_MRK_BIB_POPULAR',	'YIELD_SCIENCE',	0);
 
 INSERT INTO Building_GreatPersonPoints

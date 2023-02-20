@@ -17,7 +17,7 @@
 		</Row>
 		
 		<Row Tag="LOC_BUILDING_MRK_BIB_POPULAR_DESCRIPTION" Language="en_US">
-			<Text>Replaces the library.</Text>
+			<Text>Replaces the library. Provides no [ICON_SCIENCE] science. Has 2 [ICON_GREAT_WORK_WRITING] great work of writing slots.</Text>
 		</Row>
 	</LocalizedText>
 </GameData>

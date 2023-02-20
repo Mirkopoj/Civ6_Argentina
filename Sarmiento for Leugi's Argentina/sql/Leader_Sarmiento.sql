@@ -17,7 +17,7 @@ VALUES	('LEADER_MRK_SARMIENTO',		'LEADER_LEU_SANMARTIN.dds',		0,						'LEADER_HO
 -------------------------------------	
 -- INSERT INTO DiplomacyInfo	
 -- 			(Type,						BackgroundImage)
--- VALUES	('LEADER_MRK_SARMIENTO',		'FALLBACK_NEUTRAL_LEU_SARMIENTO.dds');
+-- VALUES	('LEADER_MRK_SARMIENTO',	'FALLBACK_NEUTRAL_LEU_SANMARTIN.dds');
 --==========================================================================================================================
 -- COLOURS
 --==========================================================================================================================
@@ -25,7 +25,7 @@ VALUES	('LEADER_MRK_SARMIENTO',		'LEADER_LEU_SANMARTIN.dds',		0,						'LEADER_HO
 -------------------------------------	
 INSERT INTO PlayerColors	
 		(Type,					Usage,			PrimaryColor, 									SecondaryColor,								TextColor)
-VALUES	('LEADER_MRK_SARMIENTO',	'Unique',		'COLOR_PLAYER_LEUGI_LEU_SARMIENTO_BACKGROUND',		'COLOR_PLAYER_LEUGI_LEU_SARMIENTO_FOREGROUND', 	'COLOR_PLAYER_WHITE_TEXT');	
+VALUES	('LEADER_MRK_SARMIENTO','Unique',		'COLOR_PLAYER_LEUGI_LEU_SARMIENTO_BACKGROUND',	'COLOR_PLAYER_LEUGI_LEU_SARMIENTO_FOREGROUND', 	'COLOR_PLAYER_WHITE_TEXT');	
 
 INSERT INTO Colors 
 		(Type, 											Red, 	Green, 	Blue, 	Alpha)
@@ -38,19 +38,19 @@ VALUES	('COLOR_PLAYER_LEUGI_LEU_SARMIENTO_BACKGROUND',	0.00,	0.00,	1.00,	1),
 -------------------------------------	
 INSERT INTO Types	
 		(Type,					Kind)
-VALUES	('LEADER_MRK_SARMIENTO',	'KIND_LEADER');	
+VALUES	('LEADER_MRK_SARMIENTO','KIND_LEADER');	
 -------------------------------------
 -- Leaders
 -------------------------------------	
 INSERT INTO Leaders	
 		(LeaderType,					Name,								InheritFrom,		SceneLayers)
-VALUES	('LEADER_MRK_SARMIENTO',			'LOC_LEADER_MRK_SARMIENTO_NAME',		'LEADER_DEFAULT',	3);	
+VALUES	('LEADER_MRK_SARMIENTO',		'LOC_LEADER_MRK_SARMIENTO_NAME',	'LEADER_DEFAULT',	3);	
 -------------------------------------
 -- LeaderQuotes
 -------------------------------------	
 INSERT INTO LeaderQuotes	
 		(LeaderType,			Quote)
-VALUES	('LEADER_MRK_SARMIENTO',	'LOC_LEADER_MRK_SARMIENTO_QUOTE');	
+VALUES	('LEADER_MRK_SARMIENTO','LOC_LEADER_MRK_SARMIENTO_QUOTE');	
 
 -------------------------------------
 -- FavoredReligions
@@ -64,7 +64,7 @@ VALUES	('LEADER_MRK_SARMIENTO',	'RELIGION_CATHOLICISM');
 --==========================================================================================================================
 INSERT INTO CivilizationLeaders
 		(LeaderType, 			CivilizationType,				CapitalName)
-VALUES  ('LEADER_MRK_SARMIENTO',	'CIVILIZATION_LEU_ARGENTINA',	'LOC_CITY_NAME_LEU_ARGENTINA_01');
+VALUES  ('LEADER_MRK_SARMIENTO','CIVILIZATION_LEU_ARGENTINA',	'LOC_CITY_NAME_LEU_ARGENTINA_01');
 
 --==========================================================================================================================
 --==========================================================================================================================
