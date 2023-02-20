@@ -6,15 +6,15 @@
 			<CivilizationType>CIVILIZATION_LEU_ARGENTINA</CivilizationType>
 			<LeaderType>LEADER_JASPER_KITTY</LeaderType>
 			<CivilizationName>LOC_CIVILIZATION_LEU_ARGENTINA_NAME</CivilizationName>
-			<CivilizationIcon>ICON_LEADER_LEU_SANMARTIN</CivilizationIcon>
+			<CivilizationIcon>ICON_LEADER_LEU_SANMARTIN_CIV</CivilizationIcon>
 			<LeaderName>LOC_LEADER_JASPER_KITTY_NAME</LeaderName>
-			<LeaderIcon>ICON_LEADER_JASPER_KITTY</LeaderIcon>
+			<LeaderIcon>ICON_LEADER_LEU_SANMARTIN</LeaderIcon>
 			<CivilizationAbilityName>LOC_TRAIT_CIVILIZATION_LEU_ARGENTINA_NAME</CivilizationAbilityName>
 			<CivilizationAbilityDescription>LOC_TRAIT_CIVILIZATION_LEU_ARGENTINA_DESCRIPTION</CivilizationAbilityDescription>
-			<CivilizationAbilityIcon>ICON_LEADER_LEU_SANMARTIN</CivilizationAbilityIcon>
+			<CivilizationAbilityIcon>ICON_LEADER_LEU_SANMARTIN_CIV</CivilizationAbilityIcon>
 			<LeaderAbilityName>LOC_TRAIT_LEADER_JASPER_KITTY_NAME</LeaderAbilityName>
 			<LeaderAbilityDescription>LOC_TRAIT_LEADER_JASPER_KITTY_DESCRIPTION</LeaderAbilityDescription>
-			<LeaderAbilityIcon>ICON_LEADER_JASPER_KITTY</LeaderAbilityIcon>
+			<LeaderAbilityIcon>ICON_LEADER_LEU_SANMARTIN</LeaderAbilityIcon>
 			<Portrait>LEADER_JASPER_KITTY_NEUTRAL</Portrait>
 		</Row>
 	</Players>
