@@ -3,7 +3,7 @@
   <Properties>
     <Name>$name$</Name>
     <Description>This example mod demonstrates how to add a new leader and civilization to the game.</Description>
-    <Created>1676923359</Created>
+    <Created>1676923873</Created>
     <Teaser>This example mod demonstrates how to add a new leader and civilization to the game.</Teaser>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
   </Properties>

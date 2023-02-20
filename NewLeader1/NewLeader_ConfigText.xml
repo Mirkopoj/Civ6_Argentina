@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>	
-		<Row Tag="LOC_LEADER_JASPER_KITTY_NAME" Language="en_US">
+		<Row Tag="LOC_LEADER_MRK_SARMIENTO_NAME" Language="en_US">
 			<Text>Jasper Kitty</Text>
 		</Row>
 		
-		<Row Tag="LOC_TRAIT_LEADER_JASPER_KITTY_NAME" Language="en_US">
+		<Row Tag="LOC_TRAIT_LEADER_MRK_SARMIENTO_NAME" Language="en_US">
 			<Text>Kitty Claws</Text>
 		</Row>
-		<Row Tag="LOC_TRAIT_LEADER_JASPER_KITTY_DESCRIPTION" Language="en_US">
+		<Row Tag="LOC_TRAIT_LEADER_MRK_SARMIENTO_DESCRIPTION" Language="en_US">
 			<Text>So sharp!</Text>
 		</Row>
 
-		<Row Tag="LOC_BUILDING_LITTER_BOX_NAME" Language="en_US">
+		<Row Tag="LOC_BUILDING_MRK_BIB_POPULAR_NAME" Language="en_US">
 			<Text>Litter Box</Text>
 		</Row>
 		
-		<Row Tag="LOC_BUILDING_LITTER_BOX_DESCRIPTION" Language="en_US">
+		<Row Tag="LOC_BUILDING_MRK_BIB_POPULAR_DESCRIPTION" Language="en_US">
 			<Text>The litter box is a unique building that only Felines get.</Text>
 		</Row>
 	</LocalizedText>
