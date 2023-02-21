@@ -54,6 +54,7 @@ INSERT INTO ModifierArguments
 		(ModifierId,					Name,						Value)
 VALUES	('MRK_SARMIENTO_UNITS',			'AbilityType',				'ABILITY_MRK_SARMIENTO_UNITS');
 
+
 --VALUES	('MRK_SARMIENTO_CIENCE_PER_KILL',			'YieldType',				'YIELD_SCIENCE'),
 --		('MRK_SARMIENTO_CIENCE_PER_KILL',			'PercentDefeatedStrength',	100),
 --		('MRK_SARMIENTO_STRENGTH_VS_BARBS',			'Amount',					5);
