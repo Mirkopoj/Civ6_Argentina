@@ -10,7 +10,7 @@
 		</Row>
 		
 		<Row Tag="LOC_TRAIT_LEADER_MRK_SARMIENTO_DESCRIPTION" Language="en_US">
-			<Text>Combat victories generate [ICON_SCIENCE] science equal to the defeted unit's [ICON_STRENGTH] combat strength. +5 [ICON_STRENGTH] combat strength agains barbarians. Allows the construction of Bibliotecas Populares with the discovery of writing.</Text>
+			<Text>Combat victories generate [ICON_Science] science equal to the defeted unit's [ICON_STRENGTH] combat strength. +5 [ICON_STRENGTH] combat strength agains barbarians. Allows the construction of Bibliotecas Populares with the discovery of writing.</Text>
 		</Row>
 
 		<Row Tag="LOC_BUILDING_MRK_BIB_POPULAR_NAME" Language="en_US">
@@ -18,7 +18,7 @@
 		</Row>
 		
 		<Row Tag="LOC_BUILDING_MRK_BIB_POPULAR_DESCRIPTION" Language="en_US">
-			<Text>Replaces the library. Provides no [ICON_SCIENCE] science. Has 2 [ICON_GREATWORK_WRITING] great work of writing slots and 1 for great works of any type.</Text>
+			<Text>Replaces the library. Provides no [ICON_Science] science. Has 2 [ICON_GREATWORK_WRITING] great work of writing slots and 1 for great works of any type.</Text>
 		</Row>
 	</LocalizedText>
 </GameData>
