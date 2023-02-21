@@ -23,10 +23,10 @@ VALUES		('BUILDING_MRK_BIB_POPULAR',	'GREATWORKSLOT_WRITING',	2),
 
 INSERT INTO Building_GreatPersonPoints
 			(BuildingType,				GreatPersonClassType,			PointsPerTurn)
-SELECT		'BUILDING_MRK_BIB_POPULAR',	GreatPersonClassType,			PointsPerTurn,
+SELECT		'BUILDING_MRK_BIB_POPULAR',	GreatPersonClassType,			PointsPerTurn
 FROM Building_GreatPersonPoints WHERE BuildingType = 'BUILDING_LIBRARY';
 
 INSERT INTO Building_GreatPersonPoints
 			(BuildingType,				GreatPersonClassType,			PointsPerTurn)
-SELECT		'BUILDING_MRK_BIB_POPULAR',	'GREAT_PERSON_CLASS_WRITER',	PointsPerTurn,
+SELECT		'BUILDING_MRK_BIB_POPULAR',	'GREAT_PERSON_CLASS_WRITER',	PointsPerTurn
 FROM Building_GreatPersonPoints WHERE BuildingType = 'BUILDING_LIBRARY';
