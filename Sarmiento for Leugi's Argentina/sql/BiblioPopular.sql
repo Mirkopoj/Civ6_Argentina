@@ -12,9 +12,6 @@ INSERT INTO Buildings
 SELECT		'BUILDING_MRK_BIB_POPULAR',	'LOC_BUILDING_MRK_BIB_POPULAR_NAME',	'LOC_BUILDING_MRK_BIB_POPULAR_DESCRIPTION',	'TRAIT_LEADER_MRK_SARMIENTO',	PrereqTech, PrereqDistrict,	PurchaseYield, Cost, AdvisorType, Maintenance, CitizenSlots
 FROM Buildings WHERE BuildingType = 'BUILDING_LIBRARY';
 
---INSERT INTO Building_YieldCHanges
---		(BuildingType,					YieldType,			YieldChange)
---VALUES	('BUILDING_MRK_BIB_POPULAR',	'YIELD_SCIENCE',	0);
 INSERT INTO BuildingReplaces
 		(CivUniqueBuildingType,			ReplacesBuildingType)
 VALUES	('BUILDING_MRK_BIB_POPULAR',	'BUILDING_LIBRARY');
