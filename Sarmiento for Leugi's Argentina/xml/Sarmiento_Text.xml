@@ -23,6 +23,11 @@
 		<Row Tag="LOC_LEADER_MRK_SARMIENTO_QUOTE" Language="en_US">
 			<Text>Meow.</Text>
 		</Row>
+
+		<!-- Leader Traits -->
+		<Row Tag="LOC_MRK_SARMIENTO_STRENGTH_VS_BARBS" Language="en_US">
+			<Text> +5 [ICON_STRENGTH] combat strength from Civilización y Barbarie</Text>
+		</Row>
     
 		<!-- Leader Dialog -->
 		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_MRK_SARMIENTO_ANY" Language="en_US">
