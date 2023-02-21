@@ -5,7 +5,8 @@
 -------------------------------------	
 INSERT INTO LeaderTraits	
 		(LeaderType,			TraitType)
-VALUES	('LEADER_MRK_SARMIENTO','TRAIT_LEADER_MRK_SARMIENTO');	
+VALUES	('LEADER_MRK_SARMIENTO','TRAIT_LEADER_MRK_SARMIENTO'),
+		('LEADER_MRK_SARMIENTO','TRAIT_BIBLIO_MRK_SARMIENTO');
 
 -------------------------------------
 -- Types
