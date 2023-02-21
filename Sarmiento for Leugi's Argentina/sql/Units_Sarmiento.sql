@@ -2,6 +2,10 @@
 -- Author: mirko
 -- DateCreated: 2/21/2023 12:40:04 PM
 --------------------------------------------------------------
+INSERT OR REPLACE INTO Types
+		(Type,							Kind)
+VALUES	('ABILITY_MRK_SARMIENTO_UNITS',	'KIND_ABILITY');
+
 INSERT OR REPLACE INTO RequirementSets
 		(RequirementSetId,					RequirementSetType)
 VALUES	('MRK_SARMIETNO_UNITS_REQUIREMENT',	'REQUIREMENTSET_TEST_ALL');
