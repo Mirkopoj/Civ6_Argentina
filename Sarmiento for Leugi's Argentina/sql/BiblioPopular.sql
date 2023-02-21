@@ -9,7 +9,7 @@ VALUES	('BUILDING_MRK_BIB_POPULAR',	'KIND_BUILDING');
 
 INSERT INTO Buildings
 			(BuildingType,				Name,									Description,								TraitType,						PrereqTech, PrereqDistrict,	PurchaseYield, Cost, AdvisorType, Maintenance, CitizenSlots)
-SELECT		'BUILDING_MRK_BIB_POPULAR',	'LOC_BUILDING_MRK_BIB_POPULAR_NAME',	'LOC_BUILDING_MRK_BIB_POPULAR_DESCRIPTION',	'TRAIT_LEADER_MRK_SARMIENTO',	PrereqTech, PrereqDistrict,	PurchaseYield, Cost, AdvisorType, Maintenance, CitizenSlots
+SELECT		'BUILDING_MRK_BIB_POPULAR',	'LOC_BUILDING_MRK_BIB_POPULAR_NAME',	'LOC_BUILDING_MRK_BIB_POPULAR_DESCRIPTION',	'TRAIT_BIBLIO_MRK_SARMIENTO',	PrereqTech, PrereqDistrict,	PurchaseYield, Cost, AdvisorType, Maintenance, CitizenSlots
 FROM Buildings WHERE BuildingType = 'BUILDING_LIBRARY';
 
 INSERT INTO BuildingReplaces
