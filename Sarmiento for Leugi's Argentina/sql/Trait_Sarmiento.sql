@@ -39,8 +39,8 @@ VALUES	('TRAIT_LEADER_MRK_SARMIENTO',	'MRK_SARMIENTO_UNITS');
 -- Modifiers
 -------------------------------------
 INSERT INTO Modifiers	
-		(ModifierId,						ModifierType,								RunOnce,	Permanent,		Repeatable,	OwnerRequirementSetId,	SubjectRequirementSetId)
-VALUES	('MRK_SARMIENTO_UNITS',				'MODIFIER_PLAYER_UNIT_GRANT_ABILITY',		0,			0,				1,			null,					null);
+		(ModifierId,						ModifierType,								RunOnce,	Permanent,	OwnerRequirementSetId,	SubjectRequirementSetId)
+VALUES	('MRK_SARMIENTO_UNITS',				'MODIFIER_PLAYER_UNIT_GRANT_ABILITY',		0,			1,			null,					'UNIT_IS_CAVALRY_REQUIREMENTS');
 
 --VALUES	('MRK_SARMIENTO_CIENCE_PER_KILL',				'MODIFIER_PLAYER_UNIT_ADJUST_POST_COMBAT_YIELD',		0,			0,				null,					null),
 --		('MRK_SARMIENTO_STRENGTH_VS_BARBS',				'MODIFIER_PLAYER_UNIT_ADJUST_BARBARIAN_COMBAT',			0,			0,				null,					null);
