@@ -12,7 +12,7 @@ VALUES	('LEADER_MRK_SARMIENTO','TRAIT_LEADER_MRK_SARMIENTO');
 -------------------------------------	
 INSERT INTO Types	
 		(Type,							Kind)
-VALUES	('TRAIT_LEADER_MRK_SARMIENTO',		'KIND_TRAIT');	
+VALUES	('TRAIT_LEADER_MRK_SARMIENTO',	'KIND_TRAIT');	
 -------------------------------------			
 -- Traits			
 -------------------------------------				
@@ -42,9 +42,9 @@ VALUES	('MRK_SARMIENTO_CIENCE_PER_KILL',				'MODIFIER_PLAYER_UNIT_ADJUST_POST_CO
 -- ModifierArguments
 -------------------------------------
 INSERT INTO ModifierArguments
-		(ModifierId,								Name,						Type,				Value)
-VALUES	--('LEU_SARMIENTO_STRENGTH_PER_TECH',			'TechCivicsPerYield',	ARGTYPE_IDENTITY,	1),
-		--('LEU_SARMIENTO_STRENGTH_PER_CIENCE',			'ModifierId',			ARGTYPE_IDENTITY,	'LEU_SARMIENTO_MOUNTED_MUSICIANS'),
-		('MRK_SARMIENTO_CIENCE_PER_KILL',			'YieldType',				ARGTYPE_IDENTITY,	'YIELD_SCIENCE'),
-		('MRK_SARMIENTO_CIENCE_PER_KILL',			'PercentDefeatedStrength',	ARGTYPE_IDENTITY,	100),
-		('MRK_SARMIENTO_STRENGTH_VS_BARBS',			'Amount',					ARGTYPE_IDENTITY,	5);
+		(ModifierId,								Name,						Value)
+VALUES	--('LEU_SARMIENTO_STRENGTH_PER_TECH',			'TechCivicsPerYield',	1),
+		--('LEU_SARMIENTO_STRENGTH_PER_CIENCE',			'ModifierId',			'LEU_SARMIENTO_MOUNTED_MUSICIANS'),
+		('MRK_SARMIENTO_CIENCE_PER_KILL',			'YieldType',				'YIELD_SCIENCE'),
+		('MRK_SARMIENTO_CIENCE_PER_KILL',			'PercentDefeatedStrength',	100),
+		('MRK_SARMIENTO_STRENGTH_VS_BARBS',			'Amount',					5);
