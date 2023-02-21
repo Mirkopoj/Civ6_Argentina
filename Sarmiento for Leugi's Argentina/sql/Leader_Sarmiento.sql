@@ -8,16 +8,16 @@
 -- LoadingInfo
 -------------------------------------	
 INSERT INTO LoadingInfo	
-		(LeaderType,				ForegroundImage,					PlayDawnOfManAudio,		BackgroundImage)
-VALUES	('LEADER_MRK_SARMIENTO',		'LEADER_LEU_SANMARTIN.dds',		0,						'LEADER_HOJO_BACKGROUND.dds');	
+		(LeaderType,				ForegroundImage,				PlayDawnOfManAudio,		BackgroundImage)
+VALUES	('LEADER_MRK_SARMIENTO',	'LEADER_LEU_SANMARTIN.dds',		0,						'LEADER_HOJO_BACKGROUND.dds');	
 --==========================================================================================================================
 -- DIPLOMACY INFO
 --==========================================================================================================================
 -- DiplomacyInfo
 -------------------------------------	
--- INSERT INTO DiplomacyInfo	
--- 			(Type,						BackgroundImage)
--- VALUES	('LEADER_MRK_SARMIENTO',	'FALLBACK_NEUTRAL_LEU_SANMARTIN.dds');
+INSERT INTO DiplomacyInfo	
+		(Type,						BackgroundImage)
+VALUES	('LEADER_MRK_SARMIENTO',	'FALLBACK_NEUTRAL_LEU_SANMARTIN.dds');
 --==========================================================================================================================
 -- COLOURS
 --==========================================================================================================================
