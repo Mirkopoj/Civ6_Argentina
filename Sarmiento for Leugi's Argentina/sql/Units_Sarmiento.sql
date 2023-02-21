@@ -3,8 +3,9 @@
 -- DateCreated: 2/21/2023 12:40:04 PM
 --------------------------------------------------------------
 INSERT OR REPLACE INTO Types
-		(Type,							Kind)
-VALUES	('ABILITY_MRK_SARMIENTO_UNITS',	'KIND_ABILITY');
+		(Type,													Kind)
+VALUES	('ABILITY_MRK_SARMIENTO_UNITS',							'KIND_ABILITY'),
+		('MODIFIER_MRK_SARMIENTO_UNIT_ADJUST_BARBARIAN_COMBAT',	'KIND_MODIFIER');
 
 INSERT OR REPLACE INTO RequirementSets
 		(RequirementSetId,					RequirementSetType)
