@@ -39,7 +39,7 @@ VALUES	('TRAIT_LEADER_MRK_SARMIENTO',	'MRK_SARMIENTO_UNITS');
 -- Modifiers
 -------------------------------------
 INSERT INTO Modifiers	
-		(ModifierId,						ModifierType,								RunOnce,	Permanent,		Repetable,	OwnerRequirementSetId,	SubjectRequirementSetId)
+		(ModifierId,						ModifierType,								RunOnce,	Permanent,		Repeatable,	OwnerRequirementSetId,	SubjectRequirementSetId)
 VALUES	('MRK_SARMIENTO_UNITS',				'MODIFIER_PLAYER_UNIT_GRANT_ABILITY',		0,			0,				1,			null,					null);
 
 --VALUES	('MRK_SARMIENTO_CIENCE_PER_KILL',				'MODIFIER_PLAYER_UNIT_ADJUST_POST_COMBAT_YIELD',		0,			0,				null,					null),
