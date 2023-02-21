@@ -12,9 +12,12 @@ INSERT INTO Buildings
 SELECT		'BUILDING_MRK_BIB_POPULAR',	'LOC_BUILDING_MRK_BIB_POPULAR_NAME',	'LOC_BUILDING_MRK_BIB_POPULAR_DESCRIPTION',	'TRAIT_LEADER_MRK_SARMIENTO',	PrereqTech, PrereqDistrict,	PurchaseYield, Cost, AdvisorType, Maintenance, CitizenSlots
 FROM Buildings WHERE BuildingType = 'BUILDING_LIBRARY';
 
-INSERT INTO Building_YieldCHanges
-		(BuildingType,					YieldType,			YieldChange)
-VALUES	('BUILDING_MRK_BIB_POPULAR',	'YIELD_SCIENCE',	0);
+--INSERT INTO Building_YieldCHanges
+--		(BuildingType,					YieldType,			YieldChange)
+--VALUES	('BUILDING_MRK_BIB_POPULAR',	'YIELD_SCIENCE',	0);
+INSERT INTO BuildingReplaces
+		(CivUniqueBuildingType,			ReplacesBuildingType)
+VALUES	('BUILDING_MRK_BIB_POPULAR',	'BUILDING_LIBRARY');
 
 INSERT INTO Building_GreatWorks
 			(BuildingType,					GreatWorkSlotType,		NumSlots)
@@ -24,9 +27,6 @@ VALUES		('BUILDING_MRK_BIB_POPULAR',	'GREATWORKSLOT_WRITING',	2),
 INSERT INTO Building_GreatPersonPoints
 			(BuildingType,				GreatPersonClassType,			PointsPerTurn)
 SELECT		'BUILDING_MRK_BIB_POPULAR',	GreatPersonClassType,			PointsPerTurn
-FROM Building_GreatPersonPoints WHERE BuildingType = 'BUILDING_LIBRARY';
-
-INSERT INTO Building_GreatPersonPoints
-			(BuildingType,				GreatPersonClassType,			PointsPerTurn)
+FROM Building_GreatPersonPoints WHERE BuildingType = 'BUILDING_LIBRARY',
 SELECT		'BUILDING_MRK_BIB_POPULAR',	'GREAT_PERSON_CLASS_WRITER',	PointsPerTurn
 FROM Building_GreatPersonPoints WHERE BuildingType = 'BUILDING_LIBRARY';
