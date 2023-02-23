@@ -33,14 +33,31 @@ FROM Building_GreatPersonPoints WHERE BuildingType = 'BUILDING_LIBRARY';
 
 INSERT INTO BuildingModifiers
 			(BuildingType,					ModifierId)
-VALUES		('BUILDING_MRK_BIB_POPULAR',	'MRK_SCIENCE_PER_POP');
+VALUES		('BUILDING_MRK_BIB_POPULAR',	'MRK_SCIENCE_PER_POP_1');
 
 INSERT INTO Modifiers
 			(ModifierId,			ModifierType,						RunOnce,	Permanent,	SubjectRequirementSetId)
-VALUES		('MRK_SCIENCE_PER_POP',	'MODIFIER_BUILDING_YIELD_CHANGE',	0,			0,			null);
+VALUES		('MRK_SCIENCE_PER_POP_1',	'MODIFIER_BUILDING_YIELD_CHANGE',	0,			0,		'REQUIREMENT_MRK_SCIENCE_PER_POP_1');
 
 INSERT INTO ModifierArguments
 			(ModifierId,			Name,			Value)
-VALUES		('MRK_SCIENCE_PER_POP',	'BuildingType',	'BUILDING_MRK_BIB_POPULAR'),
-			('MRK_SCIENCE_PER_POP',	'YieldType',	'YIELD_SCIENCE'),
-			('MRK_SCIENCE_PER_POP',	'Amount',		0.5);
+VALUES		('MRK_SCIENCE_PER_POP_1',	'BuildingType',	'BUILDING_MRK_BIB_POPULAR'),
+			('MRK_SCIENCE_PER_POP_1',	'YieldType',	'YIELD_SCIENCE'),
+			('MRK_SCIENCE_PER_POP_1',	'Amount',		1);
+
+INSERT INTO RequirementSets
+			(RequirementSetId,						RequirementSetType)
+VALUES		('REQUIREMENT_MRK_SCIENCE_PER_POP_1',	'REQUIREMENTSET_TEST_ALL');
+
+INSERT INTO RequirementSetRequirements
+			(RequirementSetId,						RequirementId)
+VALUES		('REQUIREMENT_MRK_SCIENCE_PER_POP_1',	'MRK_COUNT_POP_1');
+
+INSERT INTO Requirements
+			(RequirementId,		RequirementType)
+VALUES		('MRK_COUNT_POP_1',	'REQUIREMENT_COLLECTION_COUNT_ATLEAST');
+
+INSERT INTO RequirementArguments
+			(RequirementId,		Name,				Value)
+VALUES		('MRK_COUNT_POP_1',	'CollectionType',	'COLLECTION_CITY_PLOT_YIELDS'),
+			('MRK_COUNT_POP_1',	'Count',			1);
