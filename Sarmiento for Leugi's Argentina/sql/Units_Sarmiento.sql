@@ -4,8 +4,7 @@
 --------------------------------------------------------------
 INSERT OR REPLACE INTO Types
 		(Type,													Kind)
-VALUES	('ABILITY_MRK_SARMIENTO_UNITS',							'KIND_ABILITY'),
-		('MODIFIER_MRK_SARMIENTO_UNIT_ADJUST_BARBARIAN_COMBAT',	'KIND_MODIFIER');
+VALUES	('ABILITY_MRK_SARMIENTO_UNITS',							'KIND_ABILITY');
 
 INSERT OR REPLACE INTO UnitAbilities
 		(UnitAbilityType,				Name,									Description,									Inactive)
@@ -30,12 +29,8 @@ INSERT OR REPLACE INTO UnitAbilityModifiers
 		(UnitAbilityType,				ModifierId)
 VALUES	('ABILITY_MRK_SARMIENTO_UNITS',	'MRK_SARMIENTO_STRENGTH_VS_BARBS');
 
---INSERT OR REPLACE INTO DynamicModifiers
---		(ModifierType,												CollectionType,				EffectType)
---VALUES	('MODIFIER_MRK_SARMIENTO_UNIT_ADJUST_BARBARIAN_COMBAT',		'COLLECTION_PLAYER_UNITS',	'EFFECT_ADJUST_UNIT_BARBARIAN_COMBAT');
-
 INSERT OR REPLACE INTO Modifiers	
-		(ModifierId,							ModifierType,											SubjectRequirementSetId,	SubjectStackLimit)
+		(ModifierId,							ModifierType,										SubjectRequirementSetId,	SubjectStackLimit)
 VALUES	('MRK_SARMIENTO_STRENGTH_VS_BARBS',		'MODIFIER_PLAYER_UNITS_ADJUST_BARBARIAN_COMBAT',	null,						1);
 
 INSERT OR REPLACE INTO ModifierArguments
