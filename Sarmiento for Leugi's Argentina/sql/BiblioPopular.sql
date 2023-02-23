@@ -55,9 +55,8 @@ VALUES		('REQUIREMENT_MRK_SCIENCE_PER_POP_1',	'MRK_COUNT_POP_1');
 
 INSERT INTO Requirements
 			(RequirementId,		RequirementType)
-VALUES		('MRK_COUNT_POP_1',	'REQUIREMENT_COLLECTION_COUNT_ATLEAST');
+VALUES		('MRK_COUNT_POP_1',	'REQUIREMENT_CITY_HAS_X_POPULATION');
 
 INSERT INTO RequirementArguments
 			(RequirementId,		Name,				Value)
-VALUES		('MRK_COUNT_POP_1',	'CollectionType',	'COLLECTION_CITY_PLOT_YIELDS'),
-			('MRK_COUNT_POP_1',	'Count',			6);
+VALUES		('MRK_COUNT_POP_1',	'Amount',			6);
