@@ -43,4 +43,4 @@ INSERT INTO ModifierArguments
 			(ModifierId,			Name,			Value)
 VALUES		('MRK_SCIENCE_PER_POP',	'BuildingType',	'BUILDING_MRK_BIB_POPULAR'),
 			('MRK_SCIENCE_PER_POP',	'YieldType',	'YIELD_SCIENCE'),
-			('MRK_SCIENCE_PER_POP',	'Amount',		0.2);
+			('MRK_SCIENCE_PER_POP',	'Amount',		0.5);
