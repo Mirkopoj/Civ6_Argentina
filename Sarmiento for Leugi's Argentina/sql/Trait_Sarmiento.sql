@@ -40,7 +40,7 @@ INSERT INTO Modifiers
 		(ModifierId,						ModifierType,											RunOnce,	Permanent,	OwnerRequirementSetId,	SubjectRequirementSetId)
 VALUES	('MRK_SARMIENTO_UNITS',				'MODIFIER_PLAYER_UNITS_GRANT_ABILITY',					0,			1,			null,					null),
 		('MRK_SARMIENTO_CIENCE_PER_KILL',	'MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD',		0,			0,			null,					null),
-		('MRK_SARMIENTO_STRENGTH_PER_TECH',	'MODIFIER_PLAYER_UNIT_ADJUST_COMBAT_STRENGTH',			0,			1,			null,					null);
+		('MRK_SARMIENTO_STRENGTH_PER_TECH',	'MODIFIER_PLAYER_UNITS_ADJUST_COMBAT_STRENGTH',			0,			1,			null,					null);
 
 		--('LEU_SARMIENTO_STRENGTH_PER_CIENCE',			'MODIFIER_PLAYER_UNIT_ADJUST_COMBAT_STRENGTH',			0,			0,				null,					'UNIT_IS_CAVALRY_REQUIREMENTS');
 -------------------------------------
