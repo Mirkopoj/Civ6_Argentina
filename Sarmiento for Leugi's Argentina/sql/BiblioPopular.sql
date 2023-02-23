@@ -35,12 +35,12 @@ INSERT INTO BuildingModifiers
 			(BuildingType,					ModifierId)
 VALUES		('BUILDING_MRK_BIB_POPULAR',	'MRK_SCIENCE_PER_POP');
 
+INSERT INTO Modifiers
+			(ModifierId,			ModifierType,						RunOnce,	Permanent,	SubjectRequirementSetId)
+VALUES		('MRK_SCIENCE_PER_POP',	'MODIFIER_BUILDING_YIELD_CHANGE',	0,			0,			null);
+
 INSERT INTO ModifierArguments
 			(ModifierId,			Name,			Value)
 VALUES		('MRK_SCIENCE_PER_POP',	'BuildingType',	'BUILDING_MRK_BIB_POPULAR'),
 			('MRK_SCIENCE_PER_POP',	'YieldType',	'YIELD_SCIENCE'),
-			('MRK_SCIENCE_PER_POP',	'Amount',		0.25);
-
-INSERT INTO Modifiers
-			(ModifierId,			ModifierType,						RunOnce,	Permanent,	SubjectRequirementSetId)
-VALUES		('MRK_SCIENCE_PER_POP',	'MODIFIER_BUILDING_YIELD_CHANGE',	0,			0,			null);
+			('MRK_SCIENCE_PER_POP',	'Amount',		100.25);
