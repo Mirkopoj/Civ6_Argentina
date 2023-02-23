@@ -60,4 +60,4 @@ VALUES		('MRK_COUNT_POP_1',	'REQUIREMENT_COLLECTION_COUNT_ATLEAST');
 INSERT INTO RequirementArguments
 			(RequirementId,		Name,				Value)
 VALUES		('MRK_COUNT_POP_1',	'CollectionType',	'COLLECTION_CITY_PLOT_YIELDS'),
-			('MRK_COUNT_POP_1',	'Count',			1);
+			('MRK_COUNT_POP_1',	'Count',			6);
