@@ -30,3 +30,16 @@ INSERT INTO Building_GreatPersonPoints
 			(BuildingType,				GreatPersonClassType,			PointsPerTurn)
 SELECT		'BUILDING_MRK_BIB_POPULAR',	'GREAT_PERSON_CLASS_WRITER',	PointsPerTurn
 FROM Building_GreatPersonPoints WHERE BuildingType = 'BUILDING_LIBRARY';
+
+INSERT INTO BuildingModifiers
+			(BuildingType,					ModifierId)
+VALUES		('BUILDING_MRK_BIB_POPULAR',	'MRK_SCIENCE_PER_POP');
+
+INSERT INTO Modifiers
+			(ModifierId,			ModifierType,						RunOnce,	Permanent,	SubjectRequirementSetId)
+VALUES		('MRK_SCIENCE_PER_POP',	'MODIFIER_BUILDING_YIELD_CHANGE',	0,			0,			null);
+
+INSERT INTO ModifiersArguments
+			(ModifierId,			Name,			Value)
+VALUES		('MRK_SCIENCE_PER_POP',	'YieldType',	'YIELD_SCIENCE'),
+			('MRK_SCIENCE_PER_POP',	'Amount',		0.25);
