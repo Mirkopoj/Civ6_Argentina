@@ -144,10 +144,9 @@ VALUES		('MRK_COUNT_POP_4',	'Amount',	4),
 			('MRK_COUNT_POP_40','Amount',	40);
 
 INSERT INTO Buildings
-			(BuildingType,					Name,									Description,								TraitType,						PrereqTech, PrereqDistrict,	PurchaseYield,	Cost,	AdvisorType,	Maintenance,	CitizenSlots)
-SELECT		'BUILDING_MRK_BIB_POPULAR_AUX',	'LOC_BUILDING_MRK_BIB_POPULAR_NAME',	'LOC_BUILDING_MRK_BIB_POPULAR_DESCRIPTION',	'TRAIT_BIBLIO_MRK_SARMIENTO',	null,		PrereqDistrict,	null,			0,		0,				0,				0
-FROM Buildings WHERE BuildingType = 'BUILDING_LIBRARY';
+			(BuildingType,					Name,									Description,	TraitType,						PrereqTech, PrereqDistrict,		PurchaseYield,	Cost,	Maintenance,	CitizenSlots,	EnabledByReligion)
+VALUES		('BUILDING_MRK_BIB_POPULAR_AUX','LOC_BUILDING_MRK_BIB_POPULAR_NAME',	null,			'TRAIT_BIBLIO_MRK_SARMIENTO',	null,		'DISTRICT_CAMPUS',	null,			0,		0,				0,				1);
 
-INSERT INTO Builing_YieldChanges
+INSERT INTO Building_YieldChanges
 			(BuildingType,						YieldType,			YieldChange)
 VALUES		('BUILDING_MRK_BIB_POPULAR_AUX',	'YIELD_SCIENCE',	1);
