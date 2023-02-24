@@ -5,7 +5,7 @@
 
 function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPlayerID, TargetCityID)
 
-	if PlayerConfigurations[TargertPlayerID]:GetLeaderTypeName() ~= "LEADER_MRK_SARMIENTO" then
+	if PlayerConfigurations[TargetPlayerID]:GetLeaderTypeName() ~= "LEADER_MRK_SARMIENTO" then
 		return
 	end
 
