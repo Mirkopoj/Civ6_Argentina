@@ -3,7 +3,7 @@
   <Properties>
     <Name>Sarmiento for Leugi's Argentina</Name>
     <Description>This example mod demonstrates how to add a new leader and civilization to the game.</Description>
-    <Created>1677177859</Created>
+    <Created>1677207385</Created>
     <Teaser>Adds Domingo Faustino Sarmiento as an alternative leader for Leugi's Argentina.</Teaser>
     <Authors>TheOtherOne</Authors>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
@@ -47,9 +47,13 @@
     <UpdateArt id="Sarmiento_Art_MRK">
       <File>Sarmiento for Leugi's Argentina.dep</File>
     </UpdateArt>
+    <AddGameplayScripts id="Sarmiento_Biblio_lua_MRK">
+      <File>lua/Biblio.lua</File>
+    </AddGameplayScripts>
   </InGameActions>
   <Files>
     <File>ArtDefs/FallbackLeaders.artdef</File>
+    <File>lua/Biblio.lua</File>
     <File>Platforms/MacOS/BLPs/LeaderFallbacks.blp</File>
     <File>Platforms/MacOS/BLPs/UILeaders.blp</File>
     <File>Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
