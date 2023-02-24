@@ -12,8 +12,9 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 	print("Llego a sarmiento")
 
 	local pCity = Cities[TargetCityID]
+	local iBiblioaux = GameInfo.Buildings["BUILDING_MRK_BIB_POPULAR"].Index
 
-	if not pCity:has_building(GameInfoTypes.BUILDING_MRK_BIB_POPULAR) then
+	if not pCity:GetBuildings():HasBuilding(iBiblioaux) then
 		return
 	end
 
