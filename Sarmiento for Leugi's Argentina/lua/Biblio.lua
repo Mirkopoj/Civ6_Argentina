@@ -21,6 +21,8 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 
 	pCity:SetNumRealBuilding(pBiblioaux, nBiblioaux+1)
 
+	print("Added dumb bib")
+
 end
 
 function MKRBiblioInit()
