@@ -5,15 +5,19 @@
 
 function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPlayerID, TargetCityID)
 
-	if (PlayerConfigurations[TargertPlayerID]:GetLeaderTypeName() ~= "LEADER_MRK_SARMIENTO") then
+	if PlayerConfigurations[TargertPlayerID]:GetLeaderTypeName() ~= "LEADER_MRK_SARMIENTO" then
 		return
 	end
+
+	print("Llego a sarmiento")
 
 	local pCity = Cities[TargetCityID]
 
-	if (not pCity:has_building(GameInfoTypes.BUILDING_MRK_BIB_POPULAR)) then
+	if not pCity:has_building(GameInfoTypes.BUILDING_MRK_BIB_POPULAR) then
 		return
 	end
+
+	print("Tenia biblio")
 
 	local pBiblioaux = GameInfoTypes.BUILDING_MRK_BIB_POPULAR_AUX
 
