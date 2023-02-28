@@ -25,9 +25,7 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 
 	print("Tenia biblio")
 
-	local pBiblioaux = GameInfoTypes.BUILDING_MRK_BIB_POPULAR_AUX
-
-	local nBiblioaux = pCity:GetNumRealBuilding(pBiblioaux)
+	local nBiblioaux = pCity:GetNumRealBuilding(iBiblioaux)
 
 	pCity:SetNumRealBuilding(pBiblioaux, nBiblioaux+1)
 
