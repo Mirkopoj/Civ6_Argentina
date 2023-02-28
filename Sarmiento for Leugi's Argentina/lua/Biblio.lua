@@ -25,9 +25,9 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 
 	print("Tenia biblio")
 
-	for pTech in pSarmiento:GetTechs() do
-		if pTech:CanTriggerBoost() then
-			pTech:TriggerBoost()
+	for iTech, pTech in ipairs(pSarmiento:GetTechs()) do
+		if not pTech:HasBoostBeenTriggered(iTech) then
+			pTech:TriggerBoost(iTech)
 			break;
 		end
 	end
