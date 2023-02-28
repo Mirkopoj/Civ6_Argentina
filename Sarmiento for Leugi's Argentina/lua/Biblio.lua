@@ -2,6 +2,7 @@
 -- Author: mirko
 -- DateCreated: 2/23/2023 5:33:34 PM
 --------------------------------------------------------------
+local iBiblioaux = GameInfo.Buildings["BUILDING_MRK_BIB_POPULAR"].Index
 
 function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPlayerID, TargetCityID)
 
@@ -12,7 +13,6 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 	print("Llego a sarmiento")
 
 	local pCity = Cities[TargetCityID]
-	local iBiblioaux = GameInfo.Buildings["BUILDING_MRK_BIB_POPULAR"].Index
 
 	if not pCity:GetBuildings():HasBuilding(iBiblioaux) then
 		return
@@ -27,7 +27,7 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 	pCity:SetNumRealBuilding(pBiblioaux, nBiblioaux+1)
 
 	print("Added dumb bib")
-
+	
 end
 
 function MKRBiblioInit()
