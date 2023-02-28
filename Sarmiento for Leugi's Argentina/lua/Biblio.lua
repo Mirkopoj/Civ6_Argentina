@@ -3,6 +3,7 @@
 -- DateCreated: 2/23/2023 5:33:34 PM
 --------------------------------------------------------------
 local iBiblio = GameInfo.Buildings["BUILDING_MRK_BIB_POPULAR"].Index
+math.randomseed(os.clock())
 
 function get_random_tech_boost(pSarmiento)
 	local pTech = pSarmiento:GetTechs()
@@ -73,9 +74,14 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 
 	print("Tenia biblio")
 
-	get_random_tech_boost(pSarmiento)
-	get_random_principle_boost(pSarmiento)
-	add_citizen(pCity)
+	local rand = math.random(5)
+	if rand == 1 then
+		get_random_tech_boost(pSarmiento)
+	else if rand == 2 then
+		get_random_principle_boost(pSarmiento)
+	else
+		add_citizen(pCity)
+	end
 	
 end
 
