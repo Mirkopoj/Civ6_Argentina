@@ -28,6 +28,7 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 	local pTech = pSarmiento:GetTechs()
 	for Tech in GameInfo.Technologies() do
 		print(Tech.Index)
+		print(Tech.TechnologyType)
 		local bstatus = pTech:HasBoostBeenTriggered(iTech)
 		print(bstatus)
 		if not bstatus then
