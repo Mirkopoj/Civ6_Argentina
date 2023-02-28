@@ -142,11 +142,3 @@ VALUES		('MRK_COUNT_POP_4',	'Amount',	4),
 			('MRK_COUNT_POP_32','Amount',	32),
 			('MRK_COUNT_POP_36','Amount',	36),
 			('MRK_COUNT_POP_40','Amount',	40);
-
-INSERT INTO Buildings
-			(BuildingType,					Name,									 PrereqDistrict,	Cost,	EnabledByReligion)
-VALUES		('BUILDING_MRK_BIB_POPULAR_AUX','LOC_BUILDING_MRK_BIB_POPULAR_NAME',	'DISTRICT_CAMPUS',	1,		1);
-
-INSERT INTO Building_YieldChanges
-			(BuildingType,						YieldType,			YieldChange)
-VALUES		('BUILDING_MRK_BIB_POPULAR_AUX',	'YIELD_SCIENCE',	1);

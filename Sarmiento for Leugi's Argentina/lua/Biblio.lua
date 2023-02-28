@@ -2,7 +2,7 @@
 -- Author: mirko
 -- DateCreated: 2/23/2023 5:33:34 PM
 --------------------------------------------------------------
-local iBiblioaux = GameInfo.Buildings["BUILDING_MRK_BIB_POPULAR"].Index
+local iBiblio = GameInfo.Buildings["BUILDING_MRK_BIB_POPULAR"].Index
 
 function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPlayerID, TargetCityID)
 
@@ -19,17 +19,18 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 		print ("pCity nil")
 	end
 
-	if not pCity:GetBuildings():HasBuilding(iBiblioaux) then
+	if not pCity:GetBuildings():HasBuilding(iBiblio) then
 		return
 	end
 
 	print("Tenia biblio")
 
-	local nBiblioaux = pCity:GetNumRealBuilding(iBiblioaux)
-
-	pCity:SetNumRealBuilding(pBiblioaux, nBiblioaux+1)
-
-	print("Added dumb bib")
+	for pTech in pSarmiento:GetTechs() do
+		if pTech:CanTriggerBoost() then
+			pTech:TriggerBoost()
+			break;
+		end
+	end
 	
 end
 
