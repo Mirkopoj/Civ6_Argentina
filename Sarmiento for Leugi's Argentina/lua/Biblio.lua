@@ -30,10 +30,10 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 		print(Tech.Index)
 		print(Tech.TechnologyType)
 		local bStatus = pTech:HasBoostBeenTriggered(iTech)
-		local tLeft = pTech:HasTech(iTech)
+		local hasTech = pTech:HasTech(iTech)
 		print(bStatus)
-		print(tLeft)
-		if not bStatus then
+		print(hasTech)
+		if not bStatus and not hasTech then
 			pTech:TriggerBoost(iTech)
 			print("Boosted")
 			break;
