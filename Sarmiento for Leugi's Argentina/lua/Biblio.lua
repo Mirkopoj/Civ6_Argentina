@@ -40,6 +40,10 @@ function get_random_principle_boost(pSarmiento)
 	end
 end
 
+function add_citizen(pCity)
+	pCity:ChangePopulation(1)
+end
+
 function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPlayerID, TargetCityID)
 
 	if PlayerConfigurations[TargetPlayerID]:GetLeaderTypeName() ~= "LEADER_MRK_SARMIENTO" then
@@ -48,11 +52,19 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 
 	print("Llego a sarmiento")
 
+	if PlayerConfigurations[OriginPlayerID]:GetLeaderTypeName() == "LEADER_MRK_SARMIENTO" then
+		
+		return
+	end
+
+	print("Era Internacional")
+
 	local pSarmiento = Players[TargetPlayerID]
 	local pCity = pSarmiento:GetCities():FindID(TargetCityID)
 
 	if pCity == nil then
 		print ("pCity nil")
+		return
 	end
 
 	if not pCity:GetBuildings():HasBuilding(iBiblio) then
@@ -63,6 +75,7 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 
 	get_random_tech_boost(pSarmiento)
 	get_random_principle_boost(pSarmiento)
+	add_citizen(pCity)
 	
 end
 
