@@ -12,7 +12,8 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 
 	print("Llego a sarmiento")
 
-	local pCity = Players[TargetPlayerID]:GetCityByID(TargetCityID)
+	local pSarmiento = Players[TargetPlayerID]
+	local pCity = pSarmiento:GetCityByID(TargetCityID)
 
 	if pCity == nil then
 		print ("pCity nil")
