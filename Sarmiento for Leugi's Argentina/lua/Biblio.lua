@@ -14,6 +14,10 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 
 	local pCity = Cities[TargetCityID]
 
+	if pCity == nil then
+		print ("pCity nil")
+	end
+
 	if not pCity:GetBuildings():HasBuilding(iBiblioaux) then
 		return
 	end
