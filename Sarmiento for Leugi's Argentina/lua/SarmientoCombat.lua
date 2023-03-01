@@ -61,7 +61,7 @@ end
 
 function MRKSarmientoCombatInit()
 	Events.TurnBegin.Add(sarmiento_combat_strength_turn)
-	Events.DiploSurpriseDeclareWar.Add(sarmiento_caombat_strength_war)
+	GameEvents.DiploSurpriseDeclareWar.Add(sarmiento_caombat_strength_war)
 	Events.DiplomacyDeclareWar.Add(sarmiento_caombat_strength_war)
 	Events.DiplomacyMakePeace.Add(sarmiento_caombat_strength_war)
 end
