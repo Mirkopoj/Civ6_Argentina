@@ -24,19 +24,20 @@ function get_sarmiento_bonus(pPlayer)
 	return bonus
 end
 
-function sarmiento_combat_update(iPlayer)
+function sarmiento_combat_update(iSarmiento)
 	local max_bonus = 0
-	for pPlayer in Players do
-		if pPlayer:GetDiplomacy():IsAtWarWith(iPlayer) then
+	for iPlayer = 0, GameDefines.MAX_MAJOR_CIVS-1, 1 do
+		local pPlayer = Players[iPlayer]
+		if pPlayer:GetDiplomacy():IsAtWarWith(iSarmiento) then
 			local bonus = get_sarmiento_bonus(pPlayer)
 			if bonus > max_bonus then
 				max_bonus = bonus
 			end
 		end
 	end
-	local sarmiento_bonus = get_sarmiento_bonus(iPlayer) - max_bonus
+	local sarmiento_bonus = get_sarmiento_bonus(iSarmiento) - max_bonus
 
-	for unit in Players[iPlayer]:Units() do
+	for unit in Players[iSarmiento]:Units() do
 		local baseStrength = unit:GetBaseCombatSrength()
 		unit:SetBaseCombatStrength(baseStrength + sarmiento_bonus)
 	end
