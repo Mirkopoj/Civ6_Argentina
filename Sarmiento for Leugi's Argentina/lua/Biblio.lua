@@ -76,7 +76,7 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 	local rand = math.random(5)
 	if rand == 1 then
 		get_random_tech_boost(pSarmiento)
-	else if rand == 2 then
+	elseif rand == 2 
 		get_random_principle_boost(pSarmiento)
 	else
 		add_citizen(pCity)
