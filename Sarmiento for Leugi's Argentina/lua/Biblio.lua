@@ -85,8 +85,8 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 	
 end
 
-function MKRBiblioInit()
+function MRKBiblioInit()
 	Events.TradeRouteActivityChanged.Add(add_science_per_trade)
 end
 
-Events.LoadScreenClose.Add(MKRBiblioInit)
+Events.LoadScreenClose.Add(MRKBiblioInit)
