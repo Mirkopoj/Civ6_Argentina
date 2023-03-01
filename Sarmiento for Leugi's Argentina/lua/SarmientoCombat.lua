@@ -45,7 +45,7 @@ end
 function sarmiento_combat_strength_turn()
 	for iPlayer = 0, GameDefines.MAX_MAJOR_CIVS-1, 1 do
 		if PlayerConfigurations[iPlayer]:GetLeaderTypeName() == "LEADER_MRK_SARMIENTO" then
-			sarmiento_combat_update(iPlayer))
+			sarmiento_combat_update(iPlayer)
 		end
 	end
 end
