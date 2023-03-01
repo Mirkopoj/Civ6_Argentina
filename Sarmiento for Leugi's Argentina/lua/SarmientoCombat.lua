@@ -3,8 +3,8 @@
 -- DateCreated: 3/1/2023 3:20:32 PM
 --------------------------------------------------------------
 
-function sarmiento_combat_strength(playerID, unitID, hCommand, iData1)
-	print(hCommand..iData1)
+function sarmiento_combat_strength(playerID, unitID, eActivityType)
+	print(eActivityType)
 end
 
 function MRKSarmientoCombatInit()
