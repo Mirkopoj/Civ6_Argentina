@@ -54,7 +54,6 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 	print("Llego a sarmiento")
 
 	if PlayerConfigurations[OriginPlayerID]:GetLeaderTypeName() == "LEADER_MRK_SARMIENTO" then
-		
 		return
 	end
 
@@ -82,7 +81,6 @@ function add_science_per_trade(PlayerID, OriginPlayerID, OriginCityID, TargetPla
 	else
 		add_citizen(pCity)
 	end
-	
 end
 
 function MRKBiblioInit()
