@@ -8,7 +8,7 @@ function sarmiento_combat_strength(playerID, unitID, hCommand, iData1)
 end
 
 function MRKSarmientoCombatInit()
-	Events.UnitCommandStarted.Add(sarmiento_combat_strength)
+	Events.UnitActivityChanged.Add(sarmiento_combat_strength)
 end
 
 Events.LoadScreenClose.Add(MRKSarmientoCombatInit)
