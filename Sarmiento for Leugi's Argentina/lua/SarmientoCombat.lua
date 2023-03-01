@@ -45,7 +45,7 @@ end
 function sarmiento_combat_strength_turn()
 	for pPlayer in PlayerConfigurations do
 		if pPlayer:GetLeaderTypeName() == "LEADER_MRK_SARMIENTO" then
-			sarmiento_combat_update(pPlayer:GetLeaderTypeID)
+			sarmiento_combat_update(pPlayer:GetLeaderTypeID())
 		end
 	end
 end
