@@ -26,7 +26,7 @@ end
 
 function sarmiento_combat_update(iSarmiento)
 	local max_bonus = 0
-	for iPlayer = 0, GameConfiguration.GetInUsePlayerCount-1, 1 do
+	for iPlayer = 0, GameConfiguration[0]:GetInUsePlayerCount()-1, 1 do
 		local pPlayer = Players[iPlayer]
 		print(iPlayer)
 		print(pPlayer)
@@ -47,7 +47,7 @@ function sarmiento_combat_update(iSarmiento)
 end
 
 function sarmiento_combat_strength_turn()
-	for iPlayer = 0, GameConfiguration.GetInUsePlayerCount-1, 1 do
+	for iPlayer = 0, GameConfiguration[0]:GetInUsePlayerCount()-1, 1 do
 		if PlayerConfigurations[iPlayer]:GetLeaderTypeName() == "LEADER_MRK_SARMIENTO" then
 			sarmiento_combat_update(iPlayer)
 		end
