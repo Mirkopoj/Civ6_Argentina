@@ -53,7 +53,7 @@ function sarmiento_combat_strength_turn()
 		print(PlayerConfigurations[iPlayer]:GetLeaderTypeName())
 		print(PlayerConfigurations[iPlayer]:GetCivilizationLevelTypeName())
 		if PlayerConfigurations[iPlayer]:GetLeaderTypeName() == "LEADER_MRK_SARMIENTO" then
-			sarmiento_combat_update(iPlayer)
+			--sarmiento_combat_update(iPlayer)
 		end
 		iPlayer = iPlayer + 1
 		is_major = PlayerManager[iPlayer]:IsMajor()
