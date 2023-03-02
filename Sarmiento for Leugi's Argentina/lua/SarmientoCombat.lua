@@ -37,10 +37,11 @@ end
 
 function give_bonus(pAbility, bonus)
 	print("ABILITIES ANTES")
-	print(pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_BARBS"))
+	print(pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_BARBS"))
+	print(pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_PRO"))
 	print(pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO"))
+	print(pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_CON"))
 	print(pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON"))
-	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_BARBS", 1)
 
 	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", 0)
 	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", 0)
@@ -50,7 +51,6 @@ function give_bonus(pAbility, bonus)
 		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", -bonus)
 	end
 	print("ABILITIES DESPUES")
-	print(pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_BARBS"))
 	print(pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO"))
 	print(pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON"))
 end
