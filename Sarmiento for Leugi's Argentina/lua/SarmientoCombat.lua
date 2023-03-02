@@ -28,6 +28,7 @@ function sarmiento_combat_update(iSarmiento)
 	local max_bonus = 0
 	for iPlayer = 0, GameDefines.MAX_MAJOR_CIVS-1, 1 do
 		local pPlayer = Players[iPlayer]
+		print(pPlayer)
 		if pPlayer:GetDiplomacy():IsAtWarWith(iSarmiento) then
 			local bonus = get_sarmiento_bonus(pPlayer)
 			if bonus > max_bonus then
