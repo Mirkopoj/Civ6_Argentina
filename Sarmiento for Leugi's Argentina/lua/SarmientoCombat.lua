@@ -26,7 +26,9 @@ end
 
 function sarmiento_combat_update(iSarmiento)
 	local max_bonus = 0
-	for iPlayer = 0, PlayerManager[0]:GetWasEverAliveMajorCount()-1, 1 do
+	local is_major = true
+	local iPlayer = 0
+	repeat
 		local pPlayer = Players[iPlayer]
 		print(iPlayer)
 		print(pPlayer)
@@ -37,7 +39,12 @@ function sarmiento_combat_update(iSarmiento)
 				max_bonus = bonus
 			end
 		end
-	end
+		iPlayer = iPlayer + 1
+		if PlayerConfigurations[iPlayer]:GetCivilizationLevelTypeName() ~= "CIVILIZATION_LEVEL_FULL_CIV" then
+			is_major = false
+		end
+	until not is_major
+
 	local sarmiento_bonus = get_sarmiento_bonus(iSarmiento) - max_bonus
 
 	for unit in Players[iSarmiento]:Units() do
@@ -50,19 +57,13 @@ function sarmiento_combat_strength_turn()
 	local is_major = true
 	local iPlayer = 0
 	repeat 
-		print(PlayerConfigurations[iPlayer]:GetLeaderTypeName())
-		print(PlayerConfigurations[iPlayer]:GetCivilizationLevelTypeName())
 		if PlayerConfigurations[iPlayer]:GetLeaderTypeName() == "LEADER_MRK_SARMIENTO" then
-			--sarmiento_combat_update(iPlayer)
+			sarmiento_combat_update(iPlayer)
 		end
 		iPlayer = iPlayer + 1
 		if PlayerConfigurations[iPlayer]:GetCivilizationLevelTypeName() ~= "CIVILIZATION_LEVEL_FULL_CIV" then
-			print("FIN--------------------")
-			print(PlayerConfigurations[iPlayer]:GetLeaderTypeName())
-			print(PlayerConfigurations[iPlayer]:GetCivilizationLevelTypeName())
 			is_major = false
 		end
-		print(is_major)
 	until not is_major
 end
 
