@@ -28,12 +28,14 @@ function sarmiento_combat_update(iSarmiento)
 	local max_bonus = 0
 	local is_major = true
 	local iPlayer = 0
+	local at_war = false
 	repeat
 		local pPlayer = Players[iPlayer]
 		print(iPlayer)
 		print(PlayerConfigurations[iPlayer]:GetLeaderTypeName())
 		if pPlayer:GetDiplomacy():IsAtWarWith(iSarmiento) then
 			print("At war with sarmiento")
+			at_war = true
 			local bonus = get_sarmiento_bonus(pPlayer)
 			if bonus > max_bonus then
 				max_bonus = bonus
@@ -45,12 +47,14 @@ function sarmiento_combat_update(iSarmiento)
 		end
 	until not is_major
 
-	local sarmiento_bonus = get_sarmiento_bonus(iSarmiento) - max_bonus
-
-	for unit in Players[iSarmiento]:Units() do
-		local baseStrength = unit:GetBaseCombatSrength()
-		unit:SetBaseCombatStrength(baseStrength + sarmiento_bonus)
+	if at_war then
+		local sarmiento_bonus = get_sarmiento_bonus(iSarmiento) - max_bonus
+		for unit in Players[iSarmiento]:Units() do
+			local baseStrength = unit:GetBaseCombatSrength()
+			unit:SetBaseCombatStrength(baseStrength + sarmiento_bonus)
+		end
 	end
+
 end
 
 function sarmiento_combat_strength_turn()
