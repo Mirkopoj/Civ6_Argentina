@@ -35,9 +35,8 @@ function get_sarmiento_bonus(pPlayer)
 	return bonus
 end
 
-function dump_to_log(o)
+function dump(o)
    if type(o) == 'table' then
-	  print("table")
       local s = '{ '
       for k,v in pairs(o) do
          if type(k) ~= 'number' then k = '"'..k..'"' end
@@ -45,14 +44,12 @@ function dump_to_log(o)
       end
       return s .. '} '
    else
-	  print("not table")
       return tostring(o)
    end
 end
 
 function give_bonus(pAbility, bonus)
-	print("ABILITIES ANTES")
-	dump_to_log(pAbility:GetAbilities())
+	print("ABILITIES ANTES", dump(pAbility:GetAbilities()))
 
 	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", 0)
 	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", 0)
