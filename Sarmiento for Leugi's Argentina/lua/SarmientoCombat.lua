@@ -35,6 +35,13 @@ function get_sarmiento_bonus(pPlayer)
 	return bonus
 end
 
+function give_bonus(pAbility, bonus)
+	print("ABILITIES")
+	print(pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_BARBS"))
+	print(pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO"))
+	print(pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON"))
+end
+
 function sarmiento_combat_update(iSarmiento)
 	local max_bonus = 0
 	local is_major = true
@@ -67,7 +74,9 @@ function sarmiento_combat_update(iSarmiento)
 			local baseStrength = unit:GetCombat()
 			print(baseStrength)
 			print(sarmiento_bonus)
-			--unit:SetBaseCombatStrength(baseStrength + sarmiento_bonus)
+			if baseStrength > 0 then
+				give_bonus(unit:GetAbility(), sarmiento_bonus)
+			end
 		end
 	end
 

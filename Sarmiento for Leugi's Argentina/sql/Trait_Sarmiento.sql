@@ -53,7 +53,7 @@ VALUES	('MRK_SARMIENTO_UNITS',				'MODIFIER_PLAYER_UNITS_GRANT_ABILITY',							0
 -------------------------------------
 INSERT INTO ModifierArguments
 		(ModifierId,						Name,						Value)
-VALUES	('MRK_SARMIENTO_UNITS',				'AbilityType',				'ABILITY_MRK_SARMIENTO_UNITS'),
+VALUES	('MRK_SARMIENTO_UNITS',				'AbilityType',				'ABILITY_MRK_SARMIENTO_UNITS_BARBS'),
 		('MRK_SARMIENTO_CIENCE_PER_KILL',	'YieldType',				'YIELD_SCIENCE'),
 		('MRK_SARMIENTO_CIENCE_PER_KILL',	'PercentDefeatedStrength',	100),
 		('MRK_SARMIENTO_TRADE_ROUTE',		'YieldType',				'YIELD_GOLD'),
