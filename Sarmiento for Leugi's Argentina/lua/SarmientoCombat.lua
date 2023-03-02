@@ -3,8 +3,7 @@
 -- DateCreated: 3/1/2023 3:20:32 PM
 --------------------------------------------------------------
 
-function get_num_civics(pPlayer)
-	local pPrinc = pSarmiento:GetCulture()
+function get_num_civics(pPrinc)
 	local count = 0
 	for Princ in GameInfo.Civics() do
 		local iPrinc = Princ.Index
@@ -15,8 +14,7 @@ function get_num_civics(pPlayer)
 	return count
 end
 
-function get_num_techs(pPlayer)
-	local pTech = pSarmiento:GetTechs()
+function get_num_techs(pTech)
 	local count = 0
 	for Tech in GameInfo.Technologies() do
 		local iTech = Tech.Index
@@ -31,8 +29,8 @@ function get_sarmiento_bonus(pPlayer)
 	local bonus = 0
 	bonus = bonus +  math.floor(pPlayer:GetCulture():GetCultureYield() * 0.1)
 	bonus = bonus +  math.floor(pPlayer:GetTechs():GetScienceYield() * 0.1)
-	bonus = bonus +  get_num_techs(pPlayer)
-	bonus = bonus +  get_num_civics(pPlayer)
+	bonus = bonus +  get_num_techs(pPlayer:GetTechs())
+	bonus = bonus +  get_num_civics(pPlayer:GetCulture())
 	return bonus
 end
 
