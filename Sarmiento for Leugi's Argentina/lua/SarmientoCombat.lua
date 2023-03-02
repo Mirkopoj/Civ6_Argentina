@@ -58,6 +58,7 @@ function give_bonus(pAbility, bonus)
 	elseif bonus < 0 then
 		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", -bonus)
 	end
+	print(pAbility:TypeName(pAbility:GetAbilities()[1].Ability))
 	print("ABILITIES DESPUES")
 	print(pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO"))
 	print(pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON"))
