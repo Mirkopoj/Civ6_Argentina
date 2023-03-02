@@ -37,7 +37,7 @@ end
 
 function give_bonus(pAbility, bonus)
 	print("ABILITIES ANTES")
-	print(pAbility:GetAbilities)
+	print(pAbility:GetAbilities())
 
 	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", 0)
 	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", 0)
