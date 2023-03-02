@@ -27,13 +27,11 @@ end
 
 function get_sarmiento_bonus(pPlayer)
 	local bonus = 0
-	print(bonus)
+	print("Bonus:")
+	print(pPlayer:GetLeaderTypeName())
 	bonus = bonus +  math.floor(pPlayer:GetCulture():GetCultureYield() * 0.1)
-	print(bonus)
 	bonus = bonus +  math.floor(pPlayer:GetTechs():GetScienceYield() * 0.1)
-	print(bonus)
 	bonus = bonus +  get_num_techs(pPlayer:GetTechs())
-	print(bonus)
 	bonus = bonus +  get_num_civics(pPlayer:GetCulture())
 	print(bonus)
 	return bonus
@@ -63,7 +61,7 @@ function sarmiento_combat_update(iSarmiento)
 	until not is_major
 
 	if at_war then
-		local sarmiento_bonus = get_sarmiento_bonus(iSarmiento) - max_bonus
+		local sarmiento_bonus = get_sarmiento_bonus(Players[iSarmiento]) - max_bonus
 		for unit in Players[iSarmiento]:Units() do
 			local baseStrength = unit:GetBaseCombatSrength()
 			unit:SetBaseCombatStrength(baseStrength + sarmiento_bonus)
