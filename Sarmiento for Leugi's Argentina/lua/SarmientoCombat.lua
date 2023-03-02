@@ -31,9 +31,9 @@ function sarmiento_combat_update(iSarmiento)
 	repeat
 		local pPlayer = Players[iPlayer]
 		print(iPlayer)
-		print(pPlayer)
 		print(PlayerConfigurations[iPlayer]:GetLeaderTypeName())
 		if pPlayer:GetDiplomacy():IsAtWarWith(iSarmiento) then
+			print("At war with sarmiento")
 			local bonus = get_sarmiento_bonus(pPlayer)
 			if bonus > max_bonus then
 				max_bonus = bonus
