@@ -47,11 +47,18 @@ function sarmiento_combat_update(iSarmiento)
 end
 
 function sarmiento_combat_strength_turn()
-	for iPlayer = 0, PlayerManager[0]:GetWasEverAliveMajorCount()-1, 1 do
+	local is_major = true
+	local iPlayer = 0
+	repeat 
+		print(PlayerConfigurations[iPlayer]:GetLeaderTypeName())
+		print(PlayerConfigurations[iPlayer]:GetCivilizationLevelTypeName())
 		if PlayerConfigurations[iPlayer]:GetLeaderTypeName() == "LEADER_MRK_SARMIENTO" then
 			sarmiento_combat_update(iPlayer)
 		end
-	end
+		iPlayer = iPlayer + 1
+		is_major = PlayerManager[iPlayer]:IsMajor()
+		print(is_major)
+	until not is_major
 end
 
 function sarmiento_caombat_strength_war(iP1, iP2)
