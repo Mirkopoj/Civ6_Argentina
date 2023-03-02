@@ -56,7 +56,12 @@ function sarmiento_combat_strength_turn()
 			--sarmiento_combat_update(iPlayer)
 		end
 		iPlayer = iPlayer + 1
-		is_major = PlayerManager[iPlayer]:IsMajor()
+		if PlayerConfigurations[iPlayer]:GetCivilizationLevelTypeName() ~= "CIVILIZATION_LEVEL_FULL_CIV" then
+			print("FIN--------------------")
+			print(PlayerConfigurations[iPlayer]:GetLeaderTypeName())
+			print(PlayerConfigurations[iPlayer]:GetCivilizationLevelTypeName())
+			is_major = false
+		end
 		print(is_major)
 	until not is_major
 end
