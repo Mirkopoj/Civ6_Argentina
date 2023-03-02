@@ -51,6 +51,8 @@ end
 function give_bonus(pAbility, bonus)
 	print("ABILITIES ANTES", dump(pAbility:GetAbilities()))
 
+	pAbility:GetAbilityCount("20")
+	pAbility:GetAbilityCount(20)
 	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", 0)
 	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", 0)
 	if bonus > 0 then
