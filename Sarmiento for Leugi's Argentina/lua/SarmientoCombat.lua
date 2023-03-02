@@ -64,6 +64,11 @@ function sarmiento_combat_update(iSarmiento)
 		local sarmiento_bonus = get_sarmiento_bonus(pSarmiento) - max_bonus
 		for iUnit = 0, pSarmiento:GetUnits():GetCount() - 1, 1 do
 			local unit = pSarmiento:GetUnits():FindID(iUnit)
+			if unit == nil then
+				print ("unit nil")
+				return
+			end
+			print (iUnit)
 			local baseStrength = unit:GetBaseCombatSrength()
 			unit:SetBaseCombatStrength(baseStrength + sarmiento_bonus)
 		end
