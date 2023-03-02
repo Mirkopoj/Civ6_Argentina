@@ -51,14 +51,22 @@ end
 function give_bonus(pAbility, bonus)
 	print("ABILITIES ANTES", dump(pAbility:GetAbilities()))
 
-	print(pAbility:GetAbilityCount("20"))
-	print(pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_BARBS"))
-	print(pAbility:GetAbilityCount(20))
-	print(pAbility:HasAbility("20"))
-	print(pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_BARBS"))
-	print(pAbility:HasAbility(20))
-	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", 0)
-	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", 0)
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_PRO") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_CON") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON")
+	end
+
+	local pro = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO")
+	local con = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON")
+
+	if pro == bouns or con == -bonus then
+		return
+	end
+
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", -pro)
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", -con)
 	if bonus > 0 then
 		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", bonus)
 	elseif bonus < 0 then
