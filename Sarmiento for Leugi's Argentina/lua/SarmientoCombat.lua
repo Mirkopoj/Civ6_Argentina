@@ -47,7 +47,10 @@ function sarmiento_combat_update(iSarmiento)
 end
 
 function sarmiento_combat_strength_turn()
-	for iPlayer = 0, GameConfiguration[1]:GetAvailablePlayerCount()-1, 1 do
+	for iPlayer = 0, PlayerManager:GetWasEverAliveMajorCount()-1, 1 do
+		if not PlayerManager[iPlayer]:IsAlive() then
+			continue
+		end
 		if PlayerConfigurations[iPlayer]:GetLeaderTypeName() == "LEADER_MRK_SARMIENTO" then
 			sarmiento_combat_update(iPlayer)
 		end
