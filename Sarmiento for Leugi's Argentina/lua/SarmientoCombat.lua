@@ -62,7 +62,7 @@ function sarmiento_combat_update(iSarmiento)
 		print("Sarmiento")
 		local pSarmiento = Players[iSarmiento]
 		local sarmiento_bonus = get_sarmiento_bonus(pSarmiento) - max_bonus
-		for iUnit, unit in pSarmiento:GetUnits():Members do
+		for iUnit, unit in pSarmiento:GetUnits():Members() do
 			print(iUnit)
 			local baseStrength = unit:GetBaseCombatSrength()
 			unit:SetBaseCombatStrength(baseStrength + sarmiento_bonus)
