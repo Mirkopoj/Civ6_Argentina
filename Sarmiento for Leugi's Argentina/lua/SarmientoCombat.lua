@@ -17,7 +17,7 @@ end
 
 function get_sarmiento_bonus(pPlayer)
 	local bonus = 0
-	bonus = bonus +  math.floor(pPlayer:GetCuleture():GetCultureYield() * 0.1)
+	bonus = bonus +  math.floor(pPlayer:GetCulture():GetCultureYield() * 0.1)
 	bonus = bonus +  math.floor(pPlayer:GetTechs():GetScienceYield() * 0.1)
 	bonus = bonus +  pPlayer:GetStats():GetNumTechsResearched()
 	bonus = bonus +  get_num_civics(pPlayer)
