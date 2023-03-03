@@ -31,7 +31,7 @@ function get_sarmiento_bonus(pPlayer)
 	bonus = bonus +  math.floor(pPlayer:GetTechs():GetScienceYield() * 0.1)
 	bonus = bonus +  get_num_techs(pPlayer:GetTechs())
 	bonus = bonus +  get_num_civics(pPlayer:GetCulture())
-	print("\tAcumula: "bonus)
+	print("\tAcumula: ", bonus)
 	return bonus
 end
 
