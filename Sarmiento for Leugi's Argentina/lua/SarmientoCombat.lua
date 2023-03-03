@@ -49,8 +49,6 @@ function dump(o)
 end
 
 function give_bonus(pAbility, bonus)
-	print("ABILITIES ANTES", dump(pAbility:GetAbilities()))
-
 	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_PRO") then
 		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO")
 	end
@@ -72,9 +70,6 @@ function give_bonus(pAbility, bonus)
 	elseif bonus < 0 then
 		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", -bonus)
 	end
-	print("ABILITIES DESPUES")
-	print(pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO"))
-	print(pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON"))
 end
 
 function sarmiento_combat_update(iSarmiento)
