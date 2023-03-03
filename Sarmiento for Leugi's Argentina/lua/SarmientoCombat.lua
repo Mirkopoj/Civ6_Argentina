@@ -31,22 +31,10 @@ function get_sarmiento_bonus(pPlayer)
 	bonus = bonus +  math.floor(pPlayer:GetTechs():GetScienceYield() * 0.1)
 	bonus = bonus +  get_num_techs(pPlayer:GetTechs())
 	bonus = bonus +  get_num_civics(pPlayer:GetCulture())
-	print(bonus)
+	print("\tAcumula: "bonus)
 	return bonus
 end
 
-function dump(o)
-   if type(o) == 'table' then
-      local s = '{ '
-      for k,v in pairs(o) do
-         if type(k) ~= 'number' then k = '"'..k..'"' end
-         s = s .. '['..k..'] = ' .. dump(v) .. ','
-      end
-      return s .. '} '
-   else
-      return tostring(o)
-   end
-end
 
 function give_bonus(pAbility, bonus)
 	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_PRO") then
@@ -58,18 +46,33 @@ function give_bonus(pAbility, bonus)
 
 	local pro = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO")
 	local con = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON")
-
-	if pro == bouns or con == -bonus then
+	local c_pro = bonus-pro
+	local c_con = -bonus-con
+	if pro == 0 or con == 0 then
 		return
 	end
 
-	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", -pro)
-	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", -con)
 	if bonus > 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", bonus)
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", c_pro)
+		if con ~= 0 then
+			pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", -con)
+		end
 	elseif bonus < 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", -bonus)
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", c_con)
+		if por ~= 0 then
+			pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", -pro)
+		end
+	else
+		if por ~= 0 then
+			pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", -pro)
+		end
+		if con ~= 0 then
+			pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", -con)
+		end
 	end
+
+	print("\tPro: ", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO"))
+	print("\tCon: ", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON"))
 end
 
 function sarmiento_combat_update(iSarmiento)
@@ -99,11 +102,10 @@ function sarmiento_combat_update(iSarmiento)
 		print("Sarmiento")
 		local pSarmiento = Players[iSarmiento]
 		local sarmiento_bonus = get_sarmiento_bonus(pSarmiento) - max_bonus
+		print("Bonus: "sarmiento_bonus)
 		for _, unit in pSarmiento:GetUnits():Members() do
 			print(unit:GetName())
 			local baseStrength = unit:GetCombat()
-			print(baseStrength)
-			print(sarmiento_bonus)
 			if baseStrength > 0 then
 				give_bonus(unit:GetAbility(), sarmiento_bonus)
 			end
