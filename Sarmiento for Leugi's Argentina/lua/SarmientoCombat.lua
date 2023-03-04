@@ -35,44 +35,145 @@ function get_sarmiento_bonus(pPlayer)
 	return bonus
 end
 
+function give_count(pAbility)
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_PRO_1") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_1")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_PRO_2") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_2")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_PRO_3") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_3")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_PRO_4") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_4")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_PRO_5") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_5")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_PRO_6") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_6")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_PRO_7") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_7")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_PRO_8") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_8")
+	end
+
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_CON_1") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_1")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_CON_2") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_2")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_CON_3") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_3")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_CON_4") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_4")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_CON_5") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_5")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_CON_6") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_6")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_CON_7") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_7")
+	end
+	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_CON_8") then
+		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_8")
+	end
+end
+
+function clear_abilities(pAbility)
+	local buf
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_1")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_1", -buf)
+	end
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_2")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_2", -buf)
+	end
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_3")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_3", -buf)
+	end
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_4")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_4", -buf)
+	end
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_5")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_5", -buf)
+	end
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_6")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_6", -buf)
+	end
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_7")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_7", -buf)
+	end
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_8")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_8", -buf)
+	end
+
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_1")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_1", -buf)
+	end
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_2")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_2", -buf)
+	end
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_3")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_3", -buf)
+	end
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_4")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_4", -buf)
+	end
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_5")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_5", -buf)
+	end
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_6")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_6", -buf)
+	end
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_7")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_7", -buf)
+	end
+	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_8")
+	if buf  ~= 0 then
+		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_8", -buf)
+	end
+end
 
 function give_bonus(pAbility, bonus)
-	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_PRO") then
-		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO")
-	end
-	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_CON") then
-		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON")
-	end
-
-	local pro = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO")
-	local con = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON")
-	local c_pro = bonus-pro
-	local c_con = -bonus-con
-	if pro == 0 or con == 0 then
-		return
-	end
+	give_count(pAbility)
 
 	if bonus > 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", c_pro)
-		if con ~= 0 then
-			pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", -con)
+		local ability = "ABILITY_MRK_SARMIENTO_UNITS_PRO_"..to_string(bonus)
+		if pAbility:GetAbilityCount(ability) == 0 then
+			clear_abilities(pAbility)
+			pAbility:ChangeAbilityCount(ability, 1)
 		end
 	elseif bonus < 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", c_con)
-		if por ~= 0 then
-			pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", -pro)
+		local ability = "ABILITY_MRK_SARMIENTO_UNITS_CON_"..to_string(-bonus)
+		if pAbility:GetAbilityCount(ability) == 0 then
+			clear_abilities(pAbility)
+			pAbility:ChangeAbilityCount(ability, 1)
 		end
 	else
-		if por ~= 0 then
-			pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO", -pro)
-		end
-		if con ~= 0 then
-			pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON", -con)
-		end
+		clear_abilities(pAbility)
 	end
-
-	print("\tPro: ", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO"))
-	print("\tCon: ", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON"))
 end
 
 function sarmiento_combat_update(iSarmiento)
