@@ -25,8 +25,14 @@
 		</Row>
 
 		<!-- Leader Traits -->
-		<Row Tag="LOC_MRK_SARMIENTO_STRENGTH_VS_BARBS" Language="en_US">
-			<Text> +5 [ICON_STRENGTH] combat strength from Civilización y Barbarie</Text>
+		<Row Tag="LOC_ABILITY_MRK_SARMIENTO_UNITS_BARBS_NAME" Language="en_US">
+			<Text> Civilización y Barbarie</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_MRK_SARMIENTO_UNITS_BARBS_DESCRIPTION" Language="en_US">
+			<Text>+5 [ICON_STRENGTH] against barbarians </Text>
+		</Row>
+		<Row Tag="LOC_MRK_SARMIENTO_STRENGTH_PER_CIENCE" Language="en_US">
+			<Text> [ICON_STRENGTH] from Civilización y Barbarie</Text>
 		</Row>
     
 		<!-- Leader Dialog -->

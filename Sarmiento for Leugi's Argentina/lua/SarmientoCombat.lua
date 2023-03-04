@@ -158,7 +158,7 @@ function clear_abilities(pAbility)
 end
 
 function give_bonus(pAbility, bonus)
-	give_count(pAbility)
+	--give_count(pAbility)
 
 	if bonus > 0 then
 		local ability = "ABILITY_MRK_SARMIENTO_UNITS_PRO_"..tostring(bonus)
