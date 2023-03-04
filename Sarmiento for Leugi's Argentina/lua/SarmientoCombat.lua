@@ -161,6 +161,9 @@ function give_bonus(pAbility, bonus)
 	--give_count(pAbility)
 
 	if bonus > 0 then
+		if bonus > 8 then
+			bonus = 8
+		end
 		local ability = "ABILITY_MRK_SARMIENTO_UNITS_PRO_"..tostring(bonus)
 		print(ability)
 		if pAbility:GetAbilityCount(ability) == 0 then
@@ -185,6 +188,9 @@ function give_bonus(pAbility, bonus)
 			pAbility:ChangeAbilityCount(ability, 1)
 		end
 	elseif bonus < 0 then
+		if bonus < -8 then
+			bonus = -8
+		end
 		local ability = "ABILITY_MRK_SARMIENTO_UNITS_CON_"..tostring(-bonus)
 		print(ability)
 		if pAbility:GetAbilityCount(ability) == 0 then
