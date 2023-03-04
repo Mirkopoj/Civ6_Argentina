@@ -10,7 +10,7 @@
 		</Row>
 		
 		<Row Tag="LOC_TRAIT_LEADER_MRK_SARMIENTO_DESCRIPTION" Language="en_US">
-			<Text>Combat victories generate [ICON_Science] science equal to the defeted unit's [ICON_STRENGTH] combat strength. +5 [ICON_STRENGTH] combat strength agains barbarians. Allows the construction of Bibliotecas Populares with the discovery of writing.</Text>
+			<Text>Combat victories generate [ICON_Science] science equal to the defeted unit's [ICON_Strength] combat strength.+1 [ICON_Strength] Combat Strength against major civilizations for every technology or civic you are ahead of your most advanced oponent, +1 [ICON_Strength] Combat Strength for every 10 [ICON_Science] or [ICON_Culture] you are ahead of them. Goes up to +8 [ICON_Strength] Combat Strength, can give negative [ICON_Strength] Combat Strength if you ar behind. +5 [ICON_Strength] Combat Strength agains barbarians. Allows the construction of Bibliotecas Populares with the discovery of writing. Internation [ICON_TradeRoute] Trade routes to Sarmiento give +2 [ICON_Gold] to the sender, +1 [ICON_Science] and +1 [Icon_Culture] get added with the discovery of Scientific Theory</Text>
 		</Row>
 
 		<Row Tag="LOC_BUILDING_MRK_BIB_POPULAR_NAME" Language="en_US">
@@ -18,7 +18,7 @@
 		</Row>
 		
 		<Row Tag="LOC_BUILDING_MRK_BIB_POPULAR_DESCRIPTION" Language="en_US">
-			<Text>Replaces the library. Provides no [ICON_Science] science. Has 2 [ICON_GREATWORK_WRITING] great work of writing slots and 1 for great works of any type.</Text>
+			<Text>Unique replacement for the library providing +1 [ICON_Science] science for every 4 [ICON_Citizen] Citizens in the city, up to +10 [ICON_Science]. Has 2 [ICON_GREATWORK_WRITING] great work of writing slots and 1 for great works of any type. Every time an International [ICON_TradeRoute] Trade Route arrives at a city with a Biblioteca Popular either a [ICON_Citizen] Citizen on the city, an [ICON_TechBoosted] Eureka or an [ICON_CivicBoosted] Inspiration will be given at random</Text>
 		</Row>
 	</LocalizedText>
 </GameData>

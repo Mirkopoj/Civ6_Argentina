@@ -29,10 +29,13 @@
 			<Text> Civilización y Barbarie</Text>
 		</Row>
 		<Row Tag="LOC_ABILITY_MRK_SARMIENTO_UNITS_BARBS_DESCRIPTION" Language="en_US">
-			<Text>+5 [ICON_STRENGTH] against barbarians </Text>
+			<Text>+5 [ICON_Strength] Combat Strength against barbarians </Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_MRK_SARMIENTO_UNITS_SCIEN_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_Strength] Combat Strength for every Tech or Civic you are ahead, and for every 10 [ICON_Science] or [ICON_Culture] you produce over your oponent. (If you are behind it takes [ICON_Strength] Combat Strength away)</Text>
 		</Row>
 		<Row Tag="LOC_MRK_SARMIENTO_STRENGTH_PER_CIENCE" Language="en_US">
-			<Text> [ICON_STRENGTH] from Civilización y Barbarie</Text>
+			<Text> [ICON_Strength] from Civilización y Barbarie</Text>
 		</Row>
     
 		<!-- Leader Dialog -->
