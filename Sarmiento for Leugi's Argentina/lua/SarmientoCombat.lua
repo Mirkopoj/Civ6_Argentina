@@ -160,13 +160,13 @@ function give_bonus(pAbility, bonus)
 	give_count(pAbility)
 
 	if bonus > 0 then
-		local ability = "ABILITY_MRK_SARMIENTO_UNITS_PRO_"..to_string(bonus)
+		local ability = "ABILITY_MRK_SARMIENTO_UNITS_PRO_"..tostring(bonus)
 		if pAbility:GetAbilityCount(ability) == 0 then
 			clear_abilities(pAbility)
 			pAbility:ChangeAbilityCount(ability, 1)
 		end
 	elseif bonus < 0 then
-		local ability = "ABILITY_MRK_SARMIENTO_UNITS_CON_"..to_string(-bonus)
+		local ability = "ABILITY_MRK_SARMIENTO_UNITS_CON_"..tostring(-bonus)
 		if pAbility:GetAbilityCount(ability) == 0 then
 			clear_abilities(pAbility)
 			pAbility:ChangeAbilityCount(ability, 1)
