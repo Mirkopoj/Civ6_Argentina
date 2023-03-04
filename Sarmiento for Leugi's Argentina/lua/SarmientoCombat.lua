@@ -83,6 +83,7 @@ function give_count(pAbility)
 		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_7")
 	end
 	if not pAbility:HasAbility("ABILITY_MRK_SARMIENTO_UNITS_CON_8") then
+		clear_abilities(pAbility)
 		pAbility:AddAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_8")
 	end
 end
