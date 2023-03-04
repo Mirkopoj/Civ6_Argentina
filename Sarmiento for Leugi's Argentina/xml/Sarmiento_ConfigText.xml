@@ -10,7 +10,7 @@
 		</Row>
 		
 		<Row Tag="LOC_TRAIT_LEADER_MRK_SARMIENTO_DESCRIPTION" Language="en_US">
-			<Text>Combat victories generate [ICON_Science] science equal to the defeted unit's [ICON_Strength] combat strength. +1[ICON_Strength] Combat Strength against major civilizations for every technology or civic you are ahead of your most advanced oponent, +1[ICON_Strength] Combat Strength for every 10[ICON_Science] or [ICON_Culture] you are ahead of them. Goes up to +8[ICON_Strength] Combat Strength, can give negative [ICON_Strength] Combat Strength if you are behind. +5[ICON_Strength] Combat Strength agains barbarians. Allows the construction of Bibliotecas Populares with the discovery of Writing. International [ICON_TradeRoute] Trade routes to Sarmiento give +2[ICON_Gold] to the sender, +1[ICON_Science] and +1[Icon_Culture] get added with the discovery of Scientific Theory</Text>
+			<Text>Combat victories generate [ICON_Science] science equal to the defeted unit's [ICON_Strength] combat strength. +1[ICON_Strength] Combat Strength against major civilizations for every technology or civic you are ahead of your most advanced oponent, +1[ICON_Strength] Combat Strength for every 10[ICON_Science] or [ICON_Culture] you are ahead of them. Goes up to +8[ICON_Strength] Combat Strength, can give negative [ICON_Strength] Combat Strength if you are behind. +5[ICON_Strength] Combat Strength agains barbarians. International [ICON_TradeRoute] Trade routes to Sarmiento give +2[ICON_Gold] to the sender, +1[ICON_Science] and +1[Icon_Culture] get added with the discovery of Scientific Theory</Text>
 		</Row>
 
 		<Row Tag="LOC_BUILDING_MRK_BIB_POPULAR_NAME" Language="en_US">
