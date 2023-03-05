@@ -29,8 +29,8 @@ VALUES	('LEADER_MRK_SARMIENTO','Unique',		'COLOR_PLAYER_LEUGI_LEU_SARMIENTO_BACK
 
 INSERT INTO Colors 
 		(Type, 											Red, 	Green, 	Blue, 	Alpha)
-VALUES	('COLOR_PLAYER_LEUGI_LEU_SARMIENTO_BACKGROUND',	0.00,	0.00,	1.00,	1),
-		('COLOR_PLAYER_LEUGI_LEU_SARMIENTO_FOREGROUND',	1.00,	1.00,	1.00,	1);
+VALUES	('COLOR_PLAYER_LEUGI_LEU_SARMIENTO_BACKGROUND',	0.05,	0.09,	0.82,	1),
+		('COLOR_PLAYER_LEUGI_LEU_SARMIENTO_FOREGROUND',	1.00,	0.88,	0.88,	1);
 --==========================================================================================================================
 -- LEADERS
 --==========================================================================================================================
