@@ -17,6 +17,38 @@
 			<m_EntryID text="Icon_MRK_Sarmiento_Civ_45"/>
 			<m_ObjectName text="Icon_MRK_Sarmiento_Civ_45"/>
 		</Element>
+		<Element>
+			<m_EntryID text="Icon_MRK_Sarmiento_256"/>
+			<m_ObjectName text="Icon_MRK_Sarmiento_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Icon_MRK_Sarmiento_32"/>
+			<m_ObjectName text="Icon_MRK_Sarmiento_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Icon_MRK_Sarmiento_45"/>
+			<m_ObjectName text="Icon_MRK_Sarmiento_45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Icon_MRK_Sarmiento_48"/>
+			<m_ObjectName text="Icon_MRK_Sarmiento_48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Icon_MRK_Sarmiento_50"/>
+			<m_ObjectName text="Icon_MRK_Sarmiento_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Icon_MRK_Sarmiento_55"/>
+			<m_ObjectName text="Icon_MRK_Sarmiento_55"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Icon_MRK_Sarmiento_64"/>
+			<m_ObjectName text="Icon_MRK_Sarmiento_64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Icon_MRK_Sarmiento_80"/>
+			<m_ObjectName text="Icon_MRK_Sarmiento_80"/>
+		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
 		<Element>WINDOWS</Element>
