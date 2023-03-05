@@ -293,6 +293,16 @@
 			<LoadsLibraries>true</LoadsLibraries>
 		</Element>
 		<Element>
+			<ConsumerName text="Icons"/>
+			<ArtDefDependencyPaths>
+				<Element text="Icons.artdef"/>
+			</ArtDefDependencyPaths>
+			<LibraryDependencies>
+				<Element text="Icons"/>
+			</LibraryDependencies>
+			<LoadsLibraries>true</LoadsLibraries>
+		</Element>
+		<Element>
 			<ConsumerName text="Lenses"/>
 			<ArtDefDependencyPaths/>
 			<LibraryDependencies/>
@@ -377,6 +387,10 @@
 			<ArtDefPath text="FallbackLeaders.artdef"/>
 			<ArtDefDependencyPaths/>
 		</Element>
+		<Element>
+			<ArtDefPath text="Icons.artdef"/>
+			<ArtDefDependencyPaths/>
+		</Element>
 	</ArtDefDependencies>
 	<LibraryDependencies>
 		<Element>
@@ -415,6 +429,12 @@
 			<LibraryName text="LeaderFallback"/>
 			<PackageDependencies>
 				<Element text="LeaderFallbacks.blp"/>
+			</PackageDependencies>
+		</Element>
+		<Element>
+			<LibraryName text="Icons"/>
+			<PackageDependencies>
+				<Element text="Icons.blp"/>
 			</PackageDependencies>
 		</Element>
 		<Element>
@@ -489,6 +509,7 @@
 			<LibraryName text="UITexture"/>
 			<PackageDependencies>
 				<Element text="UILeaders.blp"/>
+				<Element text="UIIcons.blp"/>
 			</PackageDependencies>
 		</Element>
 		<Element>

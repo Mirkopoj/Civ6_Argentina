@@ -326,6 +326,16 @@
       </libraryDependencies>
       <loadsLibraries>true</loadsLibraries>
     </Element>
+	<Element>
+		<consumerName text="Icons"/>
+		<relativeArtDefPaths>
+			<Element text="Icons.artdef"/>
+		</relativeArtDefPaths>
+		<libraryDependencies>
+			<Element text="Icons"/>
+		</libraryDependencies>
+		<loadsLibraries>true</loadsLibraries>
+	</Element>
     <Element>
       <consumerName text="Lenses"/>
       <relativeArtDefPaths>
@@ -459,6 +469,12 @@
         <Element text="LeaderFallbacks"/>
       </relativePackagePaths>
     </Element>
+	<Element>
+		<libraryName text="Icons"/>
+		<relativePackagePaths>
+			<Element text="Icons"/>
+		</relativePackagePaths>
+	</Element>
     <Element>
       <libraryName text="LeaderLighting"/>
       <relativePackagePaths>
@@ -548,6 +564,7 @@
       <libraryName text="UITexture"/>
       <relativePackagePaths>
         <Element text="UILeaders"/>
+		<Element text="UIIcons"/>
       </relativePackagePaths>
     </Element>
     <Element>
