@@ -44,6 +44,31 @@
 							<m_Name text="Sarmiento_for_Leugis_Argentina_Untitled88DB1D589F6FFBDC_IconData"/>
 							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 						</Element>
+						<Element>
+							<m_Fields>
+								<m_Values>
+									<Element class="AssetObjects..BLPEntryValue">
+										<m_EntryName text="Icon_MRK_Sarmiento_Civ_45"/>
+										<m_XLPClass text="UITexture"/>
+										<m_XLPPath text="uiicons.xlp"/>
+										<m_BLPPackage text="UIIcons"/>
+										<m_LibraryName text="UITexture"/>
+										<m_ParamName text="Texture"/>
+									</Element>
+									<Element class="AssetObjects..IntValue">
+										<m_nValue>256</m_nValue>
+										<m_ParamName text="Size"/>
+									</Element>
+									<Element class="AssetObjects..IntValue">
+										<m_nValue>0</m_nValue>
+										<m_ParamName text="Baseline"/>
+									</Element>
+								</m_Values>
+							</m_Fields>
+							<m_ChildCollections/>
+							<m_Name text="Sarmiento_for_Leugis_Argentina_Icons_IconData"/>
+							<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+						</Element>
 					</Element>
 				</m_ChildCollections>
 				<m_Name text="Sarmiento_for_Leugis_Argentina_Untitled88DB1D589F6FFBDC_Icons"/>
