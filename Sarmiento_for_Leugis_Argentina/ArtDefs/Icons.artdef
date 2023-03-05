@@ -23,10 +23,10 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="LEADER_MRK_SARMIENTO_NEUTRAL"/>
+										<m_EntryName text="Icon_MRK_Sarmiento_Civ_45"/>
 										<m_XLPClass text="UITexture"/>
-										<m_XLPPath text="uileaders.xlp"/>
-										<m_BLPPackage text="UILeaders"/>
+										<m_XLPPath text="uiicons.xlp"/>
+										<m_BLPPackage text="UIIcons"/>
 										<m_LibraryName text="UITexture"/>
 										<m_ParamName text="Texture"/>
 									</Element>
