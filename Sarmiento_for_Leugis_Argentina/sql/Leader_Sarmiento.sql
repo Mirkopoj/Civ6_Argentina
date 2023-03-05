@@ -8,8 +8,8 @@
 -- LoadingInfo
 -------------------------------------	
 INSERT INTO LoadingInfo	
-		(LeaderType,				ForegroundImage,				PlayDawnOfManAudio,		BackgroundImage)
-VALUES	('LEADER_MRK_SARMIENTO',	'LEADER_LEU_SANMARTIN.dds',		0,						'LEADER_HOJO_BACKGROUND.dds');	
+		(LeaderType,				ForegroundImage,						PlayDawnOfManAudio,		BackgroundImage)
+VALUES	('LEADER_MRK_SARMIENTO',	'LEADER_MRK_SARMIENTO_NEUTRAL.dds',		0,						'LEADER_HOJO_BACKGROUND.dds');	
 --==========================================================================================================================
 -- DIPLOMACY INFO
 --==========================================================================================================================
@@ -17,20 +17,20 @@ VALUES	('LEADER_MRK_SARMIENTO',	'LEADER_LEU_SANMARTIN.dds',		0,						'LEADER_HOJ
 -------------------------------------	
 INSERT INTO DiplomacyInfo	
 		(Type,						BackgroundImage)
-VALUES	('LEADER_MRK_SARMIENTO',	'FALLBACK_NEUTRAL_LEU_SANMARTIN.dds');
+VALUES	('LEADER_MRK_SARMIENTO',	'FALLBACK_NEUTRAL_MRK_SARMIENTO.dds');
 --==========================================================================================================================
 -- COLOURS
 --==========================================================================================================================
 -- PlayerColors
 -------------------------------------	
 INSERT INTO PlayerColors	
-		(Type,					Usage,			PrimaryColor, 									SecondaryColor,								TextColor)
-VALUES	('LEADER_MRK_SARMIENTO','Unique',		'COLOR_PLAYER_LEUGI_LEU_SARMIENTO_BACKGROUND',	'COLOR_PLAYER_LEUGI_LEU_SARMIENTO_FOREGROUND', 	'COLOR_PLAYER_WHITE_TEXT');	
+		(Type,					Usage,			PrimaryColor, 								SecondaryColor,								TextColor)
+VALUES	('LEADER_MRK_SARMIENTO','Unique',		'COLOR_PLAYER_MRK_SARMIENTO_BACKGROUND',	'COLOR_PLAYER_MRK_SARMIENTO_FOREGROUND', 	'COLOR_PLAYER_WHITE_TEXT');	
 
 INSERT INTO Colors 
-		(Type, 											Red, 	Green, 	Blue, 	Alpha)
-VALUES	('COLOR_PLAYER_LEUGI_LEU_SARMIENTO_BACKGROUND',	0.05,	0.09,	0.82,	1),
-		('COLOR_PLAYER_LEUGI_LEU_SARMIENTO_FOREGROUND',	1.00,	0.88,	0.88,	1);
+		(Type, 										Red, 	Green, 	Blue, 	Alpha)
+VALUES	('COLOR_PLAYER_MRK_SARMIENTO_BACKGROUND',	0.05,	0.09,	0.82,	1),
+		('COLOR_PLAYER_MRK_SARMIENTO_FOREGROUND',	1.00,	0.88,	0.88,	1);
 --==========================================================================================================================
 -- LEADERS
 --==========================================================================================================================
@@ -76,7 +76,7 @@ VALUES  ('LEADER_MRK_SARMIENTO','CIVILIZATION_LEU_ARGENTINA',	'LOC_CITY_NAME_LEU
 ------------------------------------------------------------	
 CREATE TABLE IF NOT EXISTS StartPosition (MapName TEXT, Civilization TEXT, Leader TEXT, X INT default 0, Y INT default 0);
 INSERT INTO StartPosition
-		(Civilization,					Leader,				MapName,			X,		Y)
+		(Civilization,					Leader,						MapName,			X,		Y)
 VALUES	('CIVILIZATION_LEU_ARGENTINA',	'LEADER_MRK_SARMIENTO',		'GiantEarth',		160,	14),
 		('CIVILIZATION_LEU_ARGENTINA',	'LEADER_MRK_SARMIENTO',		'GreatestEarthMap',	29,		9),
 		('CIVILIZATION_LEU_ARGENTINA',	'LEADER_MRK_SARMIENTO',		'LargestEarth',		216,	22),

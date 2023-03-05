@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<IconTextureAtlases>
-		<Row Name="ICON_ATLAS_MRK_SARMIENTO_CIV_45"		IconSize="45"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_Sarmiento_Civ_45"/>
-		<Row Name="ICON_ATLAS_MRK_SARMIENTO_CIV_256"	IconSize="256"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_Sarmiento_Civ_256"/>
+		<Row Name="ICON_ATLAS_MRK_SARMIENTO"		IconSize="32"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_Sarmiento_32"/>
+		<Row Name="ICON_ATLAS_MRK_SARMIENTO"		IconSize="45"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_Sarmiento_45"/>
+		<Row Name="ICON_ATLAS_MRK_SARMIENTO"		IconSize="48"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_Sarmiento_48"/>
+		<Row Name="ICON_ATLAS_MRK_SARMIENTO"		IconSize="50"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_Sarmiento_50"/>
+		<Row Name="ICON_ATLAS_MRK_SARMIENTO"		IconSize="55"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_Sarmiento_55"/>
+		<Row Name="ICON_ATLAS_MRK_SARMIENTO"		IconSize="64"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_Sarmiento_64"/>
+		<Row Name="ICON_ATLAS_MRK_SARMIENTO"		IconSize="80"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_Sarmiento_80"/>
+		<Row Name="ICON_ATLAS_MRK_SARMIENTO"		IconSize="256"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_Sarmiento_256"/>
+		<Row Name="ICON_ATLAS_MRK_SARMIENTO_CIV"	IconSize="45"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_Sarmiento_Civ_45"/>
+		<Row Name="ICON_ATLAS_MRK_SARMIENTO_CIV"	IconSize="256"	IconsPerRow="1"	IconsPerColumn="1" Filename="Icon_MRK_Sarmiento_Civ_256"/>
 	</IconTextureAtlases>
 	<IconDefinitions>
-		<Row Name="ICON_BUILDING_MRK_BIB_POPULAR" Atlas="ICON_ATLAS_BUILDINGS" Index="4"/>
-		<Row Name="ICON_LEADER_MRK_SARMIENTO_CIV" Atlas="ICON_ATLAS_MRK_SARMIENTO_CIV_45" Index="0"/>
+		<Row Name="ICON_BUILDING_MRK_BIB_POPULAR"	Atlas="ICON_ATLAS_BUILDINGS"			Index="4"/>
+		<Row Name="ICON_LEADER_MRK_SARMIENTO"		Atlas="ICON_ATLAS_MRK_SARMIENTO"		Index="0"/>
+		<Row Name="ICON_LEADER_MRK_SARMIENTO_CIV"	Atlas="ICON_ATLAS_MRK_SARMIENTO_CIV"	Index="0"/>
 	</IconDefinitions>
 	
 </GameData>
