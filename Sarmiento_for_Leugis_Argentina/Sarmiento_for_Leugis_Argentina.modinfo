@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mod id="06a69bc0-53aa-4e03-a8e1-a3c3fe6add64" version="1">
   <Properties>
-    <Name>Sarmiento for Leugi's Argentina</Name>
+    <Name>Sarmiento_for_Leugis_Argentina</Name>
     <Description>This example mod demonstrates how to add a new leader and civilization to the game.</Description>
-    <Created>1678002548</Created>
+    <Created>1678004454</Created>
     <Teaser>Adds Domingo Faustino Sarmiento as an alternative leader for Leugi's Argentina.</Teaser>
     <Authors>TheOtherOne</Authors>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
