@@ -5,7 +5,7 @@
 	</IconTextureAtlases>
 	<IconDefinitions>
 		<Row Name="ICON_BUILDING_MRK_BIB_POPULAR" Atlas="ICON_ATLAS_BUILDINGS" Index="4"/>
-		<Row Name="ICON_BUILDING_MRK_BIB_POPULAR" Atlas="ICON_ATLAS_MRK_SARMIENTO_CIV" Index="0"/>
+		<Row Name="ICON_LEADER_MRK_SARMIENTO_CIV" Atlas="ICON_ATLAS_MRK_SARMIENTO_CIV" Index="0"/>
 	</IconDefinitions>
 	
 </GameData>

@@ -6,12 +6,12 @@
 			<CivilizationType>CIVILIZATION_LEU_ARGENTINA</CivilizationType>
 			<LeaderType>LEADER_MRK_SARMIENTO</LeaderType>
 			<CivilizationName>LOC_CIVILIZATION_LEU_ARGENTINA_NAME</CivilizationName>
-			<CivilizationIcon>ICON_LEADER_LEU_SANMARTIN_CIV</CivilizationIcon>
+			<CivilizationIcon>ICON_LEADER_MRK_SARMIENTO_CIV</CivilizationIcon>
 			<LeaderName>LOC_LEADER_MRK_SARMIENTO_NAME</LeaderName>
 			<LeaderIcon>ICON_LEADER_LEU_SANMARTIN</LeaderIcon>
 			<CivilizationAbilityName>LOC_TRAIT_CIVILIZATION_LEU_ARGENTINA_NAME</CivilizationAbilityName>
 			<CivilizationAbilityDescription>LOC_TRAIT_CIVILIZATION_LEU_ARGENTINA_DESCRIPTION</CivilizationAbilityDescription>
-			<CivilizationAbilityIcon>ICON_LEADER_LEU_SANMARTIN_CIV</CivilizationAbilityIcon>
+			<CivilizationAbilityIcon>ICON_LEADER_MRK_SARMIENTO_CIV</CivilizationAbilityIcon>
 			<LeaderAbilityName>LOC_TRAIT_LEADER_MRK_SARMIENTO_NAME</LeaderAbilityName>
 			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MRK_SARMIENTO_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_LEADER_LEU_SANMARTIN</LeaderAbilityIcon>
