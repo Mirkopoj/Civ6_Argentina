@@ -3,4 +3,5 @@
 	<IconDefinitions>
 		<Row Name="ICON_BUILDING_MRK_BIB_POPULAR" Atlas="ICON_ATLAS_BUILDINGS" Index="4"/>
 	</IconDefinitions>
+	
 </GameData>
