@@ -1,5 +1,4 @@
--- SarmientoCombat
--- Author: mirko
+-- SarmientoCombat-- Author: mirko
 -- DateCreated: 3/1/2023 3:20:32 PM
 --------------------------------------------------------------
 
@@ -27,10 +26,10 @@ end
 
 function get_sarmiento_bonus(pPlayer)
 	local bonus = 0
-	bonus = bonus +  math.floor(pPlayer:GetCulture():GetCultureYield() * 0.1)
-	bonus = bonus +  math.floor(pPlayer:GetTechs():GetScienceYield() * 0.1)
-	bonus = bonus +  get_num_techs(pPlayer:GetTechs())
-	bonus = bonus +  get_num_civics(pPlayer:GetCulture())
+	bonus = bonus + math.floor(pPlayer:GetCulture():GetCultureYield() * 0.1)
+	bonus = bonus + math.floor(pPlayer:GetTechs():GetScienceYield() * 0.1)
+	bonus = bonus + get_num_techs(pPlayer:GetTechs())
+	bonus = bonus + get_num_civics(pPlayer:GetCulture())
 	print("\tAcumula: ", bonus)
 	return bonus
 end
@@ -91,72 +90,39 @@ end
 function clear_abilities(pAbility)
 	local buf
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_1")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_1", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_1", -buf)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_2")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_2", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_2", -buf)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_3")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_3", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_3", -buf)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_4")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_4", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_4", -buf)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_5")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_5", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_5", -buf)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_6")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_6", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_6", -buf)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_7")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_7", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_7", -buf)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_8")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_8", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_8", -buf)
 
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_1")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_1", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_1", -buf)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_2")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_2", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_2", -buf)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_3")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_3", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_3", -buf)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_4")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_4", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_4", -buf)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_5")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_5", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_5", -buf)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_6")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_6", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_6", -buf)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_7")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_7", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_7", -buf)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_8")
-	if buf  ~= 0 then
-		pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_8", -buf)
-	end
+	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_8", -buf)
 end
-
 function give_bonus(pAbility, bonus)
 	give_count(pAbility)
 
@@ -164,10 +130,9 @@ function give_bonus(pAbility, bonus)
 		if bonus > 8 then
 			bonus = 8
 		end
-		local ability = "ABILITY_MRK_SARMIENTO_UNITS_PRO_"..tostring(bonus)
+		local ability = "ABILITY_MRK_SARMIENTO_UNITS_PRO_" .. tostring(bonus)
 		print(ability)
 		if pAbility:GetAbilityCount(ability) == 0 then
-			clear_abilities(pAbility)
 			print("\t\tAbilities before:")
 			print("\t\tPro 1:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_1"))
 			print("\t\tPro 2:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_2"))
@@ -191,10 +156,9 @@ function give_bonus(pAbility, bonus)
 		if bonus < -8 then
 			bonus = -8
 		end
-		local ability = "ABILITY_MRK_SARMIENTO_UNITS_CON_"..tostring(-bonus)
+		local ability = "ABILITY_MRK_SARMIENTO_UNITS_CON_" .. tostring(-bonus)
 		print(ability)
 		if pAbility:GetAbilityCount(ability) == 0 then
-			clear_abilities(pAbility)
 			print("\t\tAbilities before:")
 			print("\t\tPro 1:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_1"))
 			print("\t\tPro 2:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_2"))
@@ -214,8 +178,6 @@ function give_bonus(pAbility, bonus)
 			print("\t\tCon 8:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_8"))
 			pAbility:ChangeAbilityCount(ability, 1)
 		end
-	else
-		clear_abilities(pAbility)
 	end
 	print("\t\tAbilities after:")
 	print("\t\tPro 1:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_1"))
@@ -259,9 +221,17 @@ function sarmiento_combat_update(iSarmiento)
 		end
 	until not is_major
 
+	local pSarmiento = Players[iSarmiento]
+	for _, unit in pSarmiento:GetUnits():Members() do
+		print(unit:GetName())
+		local baseStrength = unit:GetCombat()
+		if baseStrength > 0 then
+			clear_abilities(unit:GetAbility())
+		end
+	end
+
 	if at_war then
 		print("Sarmiento")
-		local pSarmiento = Players[iSarmiento]
 		local sarmiento_bonus = get_sarmiento_bonus(pSarmiento) - max_bonus
 		print("Bonus: ", sarmiento_bonus)
 		for _, unit in pSarmiento:GetUnits():Members() do
@@ -272,13 +242,12 @@ function sarmiento_combat_update(iSarmiento)
 			end
 		end
 	end
-
 end
 
 function sarmiento_combat_strength_turn()
 	local is_major = true
 	local iPlayer = 0
-	repeat 
+	repeat
 		if PlayerConfigurations[iPlayer]:GetLeaderTypeName() == "LEADER_MRK_SARMIENTO" then
 			sarmiento_combat_update(iPlayer)
 		end
@@ -289,7 +258,7 @@ function sarmiento_combat_strength_turn()
 	until not is_major
 end
 
-function sarmiento_caombat_strength_war(iP1, iP2)
+function sarmiento_combat_strength_war(iP1, iP2)
 	if PlayerConfigurations[iP1]:GetLeaderTypeName() == "LEADER_MRK_SARMIENTO" then
 		sarmiento_combat_update(iP1)
 	end
@@ -300,9 +269,9 @@ end
 
 function MRKSarmientoCombatInit()
 	Events.TurnBegin.Add(sarmiento_combat_strength_turn)
-	GameEvents.DiploSurpriseDeclareWar.Add(sarmiento_caombat_strength_war)
-	Events.DiplomacyDeclareWar.Add(sarmiento_caombat_strength_war)
-	Events.DiplomacyMakePeace.Add(sarmiento_caombat_strength_war)
+	GameEvents.DiploSurpriseDeclareWar.Add(sarmiento_combat_strength_war)
+	Events.DiplomacyDeclareWar.Add(sarmiento_combat_strength_war)
+	Events.DiplomacyMakePeace.Add(sarmiento_combat_strength_war)
 end
 
 Events.LoadScreenClose.Add(MRKSarmientoCombatInit)
