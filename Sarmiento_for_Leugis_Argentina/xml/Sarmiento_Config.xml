@@ -2,7 +2,7 @@
 <GameData>
 	<Players>
 		<Row>
-			<Domain>Players:Expasion2_Players</Domain>
+			<Domain>Players:Expansion2_Players</Domain>
 			<CivilizationType>CIVILIZATION_LEU_ARGENTINA</CivilizationType>
 			<LeaderType>LEADER_MRK_SARMIENTO</LeaderType>
 			<CivilizationName>LOC_CIVILIZATION_LEU_ARGENTINA_NAME</CivilizationName>
@@ -21,7 +21,7 @@
 	</Players>
 	<PlayerItems>
 		<Row>
-			<Domain>Players:Expasion2_Players</Domain>
+			<Domain>Players:Expansion2_Players</Domain>
 			<CivilizationType>CIVILIZATION_LEU_ARGENTINA</CivilizationType>
 			<LeaderType>LEADER_MRK_SARMIENTO</LeaderType>
 			<Type>BUILDING_MRK_BIB_POPULAR</Type>
