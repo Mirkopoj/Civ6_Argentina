@@ -29,7 +29,7 @@ VALUES	('LEADER_MRK_SARMIENTO','Unique',		'COLOR_PLAYER_MRK_SARMIENTO_BACKGROUND
 
 INSERT INTO Colors 
 		(Type, 										Red, 	Green, 	Blue, 	Alpha)
-VALUES	('COLOR_PLAYER_MRK_SARMIENTO_BACKGROUND',	0.05,	0.09,	0.82,	1),
+VALUES	('COLOR_PLAYER_MRK_SARMIENTO_BACKGROUND',	0.00,	0.29,	0.68,	1),
 		('COLOR_PLAYER_MRK_SARMIENTO_FOREGROUND',	1.00,	0.88,	0.88,	1);
 --==========================================================================================================================
 -- LEADERS
