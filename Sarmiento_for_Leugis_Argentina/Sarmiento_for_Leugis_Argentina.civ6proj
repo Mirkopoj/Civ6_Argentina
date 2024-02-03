@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Sarmiento_for_Leugis_Argentina</Name>
+    <Guid>06a69bc0-53aa-4e03-a8e1-a3c3fe6add64</Guid>
+    <ProjectGuid>87a207bf-afa2-4726-8ee1-f9aad2de4ead</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Adds Domingo Faustino Sarmiento as an alternative leader for Leugi's Argentina.</Teaser>
+    <Description>This example mod demonstrates how to add a new leader and civilization to the game.</Description>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="Sarmiento_y_Biblio_MRK"><File>sql/Leader_Sarmiento.sql</File><File>sql/BiblioPopular.sql</File><File>sql/Trait_Sarmiento.sql</File><File>sql/Units_Sarmiento.sql</File></UpdateDatabase><UpdateText id="Sarmiento_Text_MRK"><File>xml/Sarmiento_ConfigText.xml</File><File>xml/Sarmiento_Text.xml</File></UpdateText><UpdateIcons id="Sarmiento_Icons_MRK"><File>xml/Sarmiento_Icons.xml</File></UpdateIcons><UpdateArt id="Sarmiento_Art_MRK"><File>(Mod Art Dependency File)</File></UpdateArt><AddGameplayScripts id="Sarmiento_Biblio_lua_MRK"><File>lua/Biblio.lua</File><File>lua/SarmientoCombat.lua</File></AddGameplayScripts></InGameActions>]]></InGameActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="Sarmiento_Config_FE_MRK"><File>xml/Sarmiento_Config.xml</File></UpdateDatabase><UpdateText id="Sarmiento_ConfigText_FE_MRK"><File>xml/Sarmiento_ConfigText.xml</File></UpdateText><UpdateIcons id="Sarmiento_ConfigIcons_FE_MRK"><File>xml/Sarmiento_Icons.xml</File></UpdateIcons><UpdateArt id="Sarmiento_ConfigArt_FE_MRK"><File>(Mod Art Dependency File)</File></UpdateArt></FrontEndActions>]]></FrontEndActionData>
+    <ActionCriteriaData><![CDATA[<ActionCriteria><Criteria id="LeaderCriteria"><LeaderPlayable>StandardPlayers::LEADER_JASPER_KITTY</LeaderPlayable></Criteria></ActionCriteria>]]></ActionCriteriaData>
+    <AssemblyName>NewLeader1</AssemblyName>
+    <RootNamespace>NewLeader1</RootNamespace>
+    <Authors>TheOtherOne</Authors>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Mod" title="Leugi's Argentina Civilization" id="aeac5f05-a3b4-45cb-b80a-e3f1c62b7aee" />
+</Associations>]]></AssociationData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="ArtDefs\Icons.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lua\Biblio.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lua\SarmientoCombat.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sarmiento_for_Leugis_Argentina.art.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="sql\BiblioPopular.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="sql\Trait_Sarmiento.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="sql\Leader_Sarmiento.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="sql\Units_Sarmiento.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Icon_MRK_Sarmiento_256.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Icon_MRK_Sarmiento_32.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Icon_MRK_Sarmiento_45.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Icon_MRK_Sarmiento_48.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Icon_MRK_Sarmiento_50.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Icon_MRK_Sarmiento_55.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Icon_MRK_Sarmiento_64.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Icon_MRK_Sarmiento_80.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Icon_MRK_Sarmiento_Civ_256.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Icon_MRK_Sarmiento_Civ_256.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Icon_MRK_Sarmiento_Civ_45.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Icon_MRK_Sarmiento_Civ_45.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\UIIcons.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="xml\Sarmiento_Config.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="xml\Sarmiento_ConfigText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="xml\Sarmiento_Icons.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="xml\Sarmiento_Text.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="Artdefs\" />
+    <Folder Include="lua" />
+    <Folder Include="sql" />
+    <Folder Include="xml" />
+    <Folder Include="Textures\" />
+    <Folder Include="XLPs\" />
+    <None Include="Textures\FALLBACK_NEUTRAL_MRK_SARMIENTO.dds" />
+    <None Include="Textures\FALLBACK_NEUTRAL_MRK_SARMIENTO.tex" />
+    <None Include="Textures\LEADER_MRK_SARMIENTO_NEUTRAL.dds" />
+    <None Include="Textures\LEADER_MRK_SARMIENTO_NEUTRAL.tex" />
+    <None Include="ArtDefs\FallbackLeaders.artdef" />
+    <None Include="XLPs\LeaderFallbacks.xlp" />
+    <None Include="XLPs\UILeaders.xlp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
