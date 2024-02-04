@@ -15,9 +15,9 @@ VALUES	('LEADER_MRK_SARMIENTO',	'LEADER_MRK_SARMIENTO_NEUTRAL.dds',		0,						'LE
 --==========================================================================================================================
 -- DiplomacyInfo
 -------------------------------------	
-INSERT INTO DiplomacyInfo	
-		(Type,						BackgroundImage)
-VALUES	('LEADER_MRK_SARMIENTO',	'FALLBACK_NEUTRAL_MRK_SARMIENTO.dds');
+--INSERT INTO DiplomacyInfo	
+--		(Type,						BackgroundImage)
+--VALUES	('LEADER_MRK_SARMIENTO',	'FALLBACK_NEUTRAL_MRK_SARMIENTO.dds');
 --==========================================================================================================================
 -- COLOURS
 --==========================================================================================================================
