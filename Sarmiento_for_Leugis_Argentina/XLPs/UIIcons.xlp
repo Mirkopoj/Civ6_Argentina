@@ -10,20 +10,8 @@
 	<m_PackageName text="UIIcons"/>
 	<m_Entries>
 		<Element>
-			<m_EntryID text="Icon_MRK_Sarmiento_Civ_256"/>
-			<m_ObjectName text="Icon_MRK_Sarmiento_Civ_256"/>
-		</Element>
-		<Element>
-			<m_EntryID text="Icon_MRK_Sarmiento_Civ_45"/>
-			<m_ObjectName text="Icon_MRK_Sarmiento_Civ_45"/>
-		</Element>
-		<Element>
 			<m_EntryID text="Icon_MRK_Sarmiento_256"/>
 			<m_ObjectName text="Icon_MRK_Sarmiento_256"/>
-		</Element>
-		<Element>
-			<m_EntryID text="Icon_MRK_Sarmiento_80"/>
-			<m_ObjectName text="Icon_MRK_Sarmiento_80"/>
 		</Element>
 		<Element>
 			<m_EntryID text="Icon_MRK_Sarmiento_32"/>
@@ -48,6 +36,18 @@
 		<Element>
 			<m_EntryID text="Icon_MRK_Sarmiento_64"/>
 			<m_ObjectName text="Icon_MRK_Sarmiento_64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Icon_MRK_Sarmiento_80"/>
+			<m_ObjectName text="Icon_MRK_Sarmiento_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Icon_MRK_Sarmiento_Civ_256"/>
+			<m_ObjectName text="Icon_MRK_Sarmiento_Civ_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Icon_MRK_Sarmiento_Civ_45"/>
+			<m_ObjectName text="Icon_MRK_Sarmiento_Civ_45"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
