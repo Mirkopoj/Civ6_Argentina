@@ -274,7 +274,9 @@
 		</Element>
 		<Element>
 			<ConsumerName text="Leaders"/>
-			<ArtDefDependencyPaths/>
+			<ArtDefDependencyPaths>
+				<Element text="Leaders.artdef"/>
+			</ArtDefDependencyPaths>
 			<LibraryDependencies>
 				<Element text="Leader"/>
 				<Element text="LeaderLighting"/>
@@ -381,6 +383,10 @@
 	<ArtDefDependencies>
 		<Element>
 			<ArtDefPath text="Clutter.artdef"/>
+			<ArtDefDependencyPaths/>
+		</Element>
+		<Element>
+			<ArtDefPath text="Leaders.artdef"/>
 			<ArtDefDependencyPaths/>
 		</Element>
 		<Element>

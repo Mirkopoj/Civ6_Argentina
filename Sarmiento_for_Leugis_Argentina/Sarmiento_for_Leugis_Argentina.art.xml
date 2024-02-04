@@ -275,7 +275,9 @@
 		</Element>
 		<Element>
 			<consumerName text="Leaders"/>
-			<relativeArtDefPaths/>
+			<relativeArtDefPaths>
+				<Element text="Leaders.artdef"/>
+			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="Leader"/>
 				<Element text="LeaderLighting"/>
