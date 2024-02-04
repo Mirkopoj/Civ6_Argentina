@@ -16,7 +16,7 @@
 			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MRK_SARMIENTO_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_LEADER_MRK_SARMIENTO</LeaderAbilityIcon>
 			<Portrait>LEADER_MRK_SARMIENTO_NEUTRAL</Portrait>
-			<PortraitBackground>LEADER_HOJO_BACKGROUND</PortraitBackground>
+			<PortraitBackground>LEADER_DEFAULT_BACKGROUND</PortraitBackground>
 		</Row>
 		<Row>
 			<Domain>Players:Expansion1_Players</Domain>
@@ -33,7 +33,7 @@
 			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MRK_SARMIENTO_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_LEADER_MRK_SARMIENTO</LeaderAbilityIcon>
 			<Portrait>LEADER_MRK_SARMIENTO_NEUTRAL</Portrait>
-			<PortraitBackground>LEADER_HOJO_BACKGROUND</PortraitBackground>
+			<PortraitBackground>LEADER_DEFAULT_BACKGROUND</PortraitBackground>
 		</Row>
 		<Row>
 			<Domain>Players:Expansion2_Players</Domain>
@@ -50,7 +50,7 @@
 			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MRK_SARMIENTO_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_LEADER_MRK_SARMIENTO</LeaderAbilityIcon>
 			<Portrait>LEADER_MRK_SARMIENTO_NEUTRAL</Portrait>
-			<PortraitBackground>LEADER_HOJO_BACKGROUND</PortraitBackground>
+			<PortraitBackground>LEADER_DEFAULT_BACKGROUND</PortraitBackground>
 		</Row>
 	</Players>
 	<PlayerItems>
@@ -84,7 +84,7 @@
 			<Icon>ICON_BUILDING_MRK_BIB_POPULAR</Icon>
 			<SortIndex>10</SortIndex>
 		</Row>
-		<Row CivilizationType="CIVILIZATION_LEU_ARGENTINA" LeaderType="LEADER_MRK_SARMIENTO" Type="UNIT_LEU_GAUCHO" Icon="ICON_UNIT_LEU_GAUCHO" Name="LOC_UNIT_LEU_GAUCHO_NAME" Description="LOC_UNIT_LEU_GAUCHO_DESCRIPTION" SortIndex="10" Domain="Players:Expasion2_Players" />
-		<Row CivilizationType="CIVILIZATION_LEU_ARGENTINA" LeaderType="LEADER_MRK_SARMIENTO" Type="DISTRICT_LEU_ARRABAL" Icon="ICON_DISTRICT_LEU_ARRABAL" Name="LOC_DISTRICT_LEU_ARRABAL_NAME" Description="LOC_DISTRICT_LEU_ARRABAL_DESCRIPTION" SortIndex="20" Domain="Players:Expasion2_Players" />
+		<Row CivilizationType="CIVILIZATION_LEU_ARGENTINA" LeaderType="LEADER_MRK_SARMIENTO" Type="UNIT_LEU_GAUCHO" Icon="ICON_UNIT_LEU_GAUCHO" Name="LOC_UNIT_LEU_GAUCHO_NAME" Description="LOC_UNIT_LEU_GAUCHO_DESCRIPTION" SortIndex="10"  />
+		<Row CivilizationType="CIVILIZATION_LEU_ARGENTINA" LeaderType="LEADER_MRK_SARMIENTO" Type="DISTRICT_LEU_ARRABAL" Icon="ICON_DISTRICT_LEU_ARRABAL" Name="LOC_DISTRICT_LEU_ARRABAL_NAME" Description="LOC_DISTRICT_LEU_ARRABAL_DESCRIPTION" SortIndex="20"  />
 	</PlayerItems>
 </GameData>

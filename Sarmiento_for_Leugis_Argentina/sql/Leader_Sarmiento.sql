@@ -44,7 +44,7 @@ VALUES	('LEADER_MRK_SARMIENTO','KIND_LEADER');
 -------------------------------------	
 INSERT INTO Leaders	
 		(LeaderType,					Name,								InheritFrom,		SceneLayers)
-VALUES	('LEADER_MRK_SARMIENTO',		'LOC_LEADER_MRK_SARMIENTO_NAME',	'LEADER_DEFAULT',	3);	
+VALUES	('LEADER_MRK_SARMIENTO',		'LOC_LEADER_MRK_SARMIENTO_NAME',	'LEADER_DEFAULT',	4);	
 -------------------------------------
 -- LeaderQuotes
 -------------------------------------	
