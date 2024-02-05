@@ -30,7 +30,6 @@ function get_sarmiento_bonus(pPlayer)
 	bonus = bonus + math.floor(pPlayer:GetTechs():GetScienceYield() * 0.1)
 	bonus = bonus + get_num_techs(pPlayer:GetTechs())
 	bonus = bonus + get_num_civics(pPlayer:GetCulture())
-	print("\tAcumula: ", bonus)
 	return bonus
 end
 
@@ -123,8 +122,9 @@ function clear_abilities(pAbility)
 	buf = pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_8")
 	pAbility:ChangeAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_8", -buf)
 end
+
 function give_bonus(pAbility, bonus)
-	give_count(pAbility)
+	--give_count(pAbility)
 
 	if bonus > 0 then
 		if bonus > 8 then
@@ -133,24 +133,8 @@ function give_bonus(pAbility, bonus)
 		local ability = "ABILITY_MRK_SARMIENTO_UNITS_PRO_" .. tostring(bonus)
 		print(ability)
 		if pAbility:GetAbilityCount(ability) == 0 then
-			print("\t\tAbilities before:")
-			print("\t\tPro 1:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_1"))
-			print("\t\tPro 2:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_2"))
-			print("\t\tPro 3:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_3"))
-			print("\t\tPro 4:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_4"))
-			print("\t\tPro 5:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_5"))
-			print("\t\tPro 6:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_6"))
-			print("\t\tPro 7:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_7"))
-			print("\t\tPro 8:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_8"))
-			print("\t\tCon 1:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_1"))
-			print("\t\tCon 2:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_2"))
-			print("\t\tCon 3:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_3"))
-			print("\t\tCon 4:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_4"))
-			print("\t\tCon 5:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_5"))
-			print("\t\tCon 6:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_6"))
-			print("\t\tCon 7:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_7"))
-			print("\t\tCon 8:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_8"))
 			pAbility:ChangeAbilityCount(ability, 1)
+			print("Dado")
 		end
 	elseif bonus < 0 then
 		if bonus < -8 then
@@ -159,43 +143,9 @@ function give_bonus(pAbility, bonus)
 		local ability = "ABILITY_MRK_SARMIENTO_UNITS_CON_" .. tostring(-bonus)
 		print(ability)
 		if pAbility:GetAbilityCount(ability) == 0 then
-			print("\t\tAbilities before:")
-			print("\t\tPro 1:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_1"))
-			print("\t\tPro 2:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_2"))
-			print("\t\tPro 3:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_3"))
-			print("\t\tPro 4:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_4"))
-			print("\t\tPro 5:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_5"))
-			print("\t\tPro 6:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_6"))
-			print("\t\tPro 7:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_7"))
-			print("\t\tPro 8:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_8"))
-			print("\t\tCon 1:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_1"))
-			print("\t\tCon 2:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_2"))
-			print("\t\tCon 3:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_3"))
-			print("\t\tCon 4:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_4"))
-			print("\t\tCon 5:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_5"))
-			print("\t\tCon 6:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_6"))
-			print("\t\tCon 7:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_7"))
-			print("\t\tCon 8:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_8"))
 			pAbility:ChangeAbilityCount(ability, 1)
 		end
 	end
-	print("\t\tAbilities after:")
-	print("\t\tPro 1:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_1"))
-	print("\t\tPro 2:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_2"))
-	print("\t\tPro 3:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_3"))
-	print("\t\tPro 4:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_4"))
-	print("\t\tPro 5:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_5"))
-	print("\t\tPro 6:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_6"))
-	print("\t\tPro 7:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_7"))
-	print("\t\tPro 8:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_PRO_8"))
-	print("\t\tCon 1:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_1"))
-	print("\t\tCon 2:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_2"))
-	print("\t\tCon 3:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_3"))
-	print("\t\tCon 4:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_4"))
-	print("\t\tCon 5:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_5"))
-	print("\t\tCon 6:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_6"))
-	print("\t\tCon 7:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_7"))
-	print("\t\tCon 8:", pAbility:GetAbilityCount("ABILITY_MRK_SARMIENTO_UNITS_CON_8"))
 end
 
 function sarmiento_combat_update(iSarmiento)
@@ -223,7 +173,6 @@ function sarmiento_combat_update(iSarmiento)
 
 	local pSarmiento = Players[iSarmiento]
 	for _, unit in pSarmiento:GetUnits():Members() do
-		print(unit:GetName())
 		local baseStrength = unit:GetCombat()
 		if baseStrength > 0 then
 			clear_abilities(unit:GetAbility())
@@ -245,6 +194,7 @@ function sarmiento_combat_update(iSarmiento)
 end
 
 function sarmiento_combat_strength_turn()
+	print("sarmiento_combat_strength_turn")
 	local is_major = true
 	local iPlayer = 0
 	repeat
