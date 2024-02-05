@@ -3,7 +3,7 @@
   <Properties>
     <Name>Sarmiento_for_Leugis_Argentina</Name>
     <Description>This example mod demonstrates how to add a new leader and civilization to the game.</Description>
-    <Created>1707037961</Created>
+    <Created>1707091727</Created>
     <Teaser>Adds Domingo Faustino Sarmiento as an alternative leader for Leugi's Argentina.</Teaser>
     <Authors>TheOtherOne</Authors>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
@@ -84,6 +84,7 @@
     <File>Textures/Icon_MRK_Sarmiento_Civ_45.tex</File>
     <File>Textures/MRK_SARMIENTO_1.dds</File>
     <File>Textures/MRK_SARMIENTO_1.tex</File>
+    <File>Textures/MRK_SARMIENTO_2.dds</File>
     <File>Textures/MRK_SARMIENTO_4.dds</File>
     <File>Textures/MRK_SARMIENTO_4.tex</File>
     <File>XLPs/UIIcons.xlp</File>
