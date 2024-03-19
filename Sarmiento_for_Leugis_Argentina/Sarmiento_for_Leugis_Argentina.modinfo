@@ -3,7 +3,7 @@
   <Properties>
     <Name>Sarmiento_for_Leugis_Argentina</Name>
     <Description>Domigo Faustino Sarmiento is a cientific and militaristic leader for Leugi's Argentina.</Description>
-    <Created>1707294941</Created>
+    <Created>1710891433</Created>
     <Teaser>Adds Domingo Faustino Sarmiento as an alternative leader for Leugi's Argentina.</Teaser>
     <Authors>TheOtherOne</Authors>
     <SpecialThanks>LaRipea</SpecialThanks>
@@ -54,9 +54,15 @@
     </AddGameplayScripts>
   </InGameActions>
   <Files>
+    <File>ArtDefs/Buildings.artdef</File>
     <File>ArtDefs/FallbackLeaders.artdef</File>
     <File>ArtDefs/Icons.artdef</File>
+    <File>ArtDefs/Landmarks.artdef</File>
     <File>ArtDefs/Leaders.artdef</File>
+    <File>Assets/DIS_CMP_MRK_BiblioPopular_Asset.ast</File>
+    <File>Geometries/DIS_CMP_MRK_BiblioPopular.fgx</File>
+    <File>Geometries/DIS_CMP_MRK_BiblioPopular.geo</File>
+    <File>Geometries/DIS_CMP_MRK_BiblioPopular_GeometrySet.xml</File>
     <File>lua/Biblio.lua</File>
     <File>lua/SarmientoCombat.lua</File>
     <File>Platforms/MacOS/BLPs/LeaderFallbacks.blp</File>

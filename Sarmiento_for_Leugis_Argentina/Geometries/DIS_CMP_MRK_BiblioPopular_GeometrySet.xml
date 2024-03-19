@@ -1,0 +1,94 @@
+<m_GeometrySet>
+<m_ModelInstances>
+<Element>
+<m_Name text="Library2"/>
+<m_GeoName text="DIS_CMP_MRK_BiblioPopular"/>
+<m_GroupStates>
+<Element>
+<m_Values>
+<m_Values>
+<Element class="AssetObjects:ObjectValue">
+<m_ObjectName text="FrenteCentro"/>
+<m_eObjectType>MATERIAL</m_eObjectType>
+<m_ParamName text="Material"/>
+</Element>
+</m_Values>
+</m_Values>
+<m_GroupName text="FrenteCentro"/>
+<m_MeshName text="Cube.001"/>
+<m_StateName text="Default"/>
+</Element>
+<Element>
+<m_Values>
+<m_Values>
+<Element class="AssetObjects:ObjectValue">
+<m_ObjectName text="Techo"/>
+<m_eObjectType>MATERIAL</m_eObjectType>
+<m_ParamName text="Material"/>
+</Element>
+</m_Values>
+</m_Values>
+<m_GroupName text="Techo"/>
+<m_MeshName text="Cube.001"/>
+<m_StateName text="Default"/>
+</Element>
+<Element>
+<m_Values>
+<m_Values>
+<Element class="AssetObjects:ObjectValue">
+<m_ObjectName text="Madera"/>
+<m_eObjectType>MATERIAL</m_eObjectType>
+<m_ParamName text="Material"/>
+</Element>
+</m_Values>
+</m_Values>
+<m_GroupName text="Madera"/>
+<m_MeshName text="Cube.001"/>
+<m_StateName text="Default"/>
+</Element>
+<Element>
+<m_Values>
+<m_Values>
+<Element class="AssetObjects:ObjectValue">
+<m_ObjectName text="Zocalo"/>
+<m_eObjectType>MATERIAL</m_eObjectType>
+<m_ParamName text="Material"/>
+</Element>
+</m_Values>
+</m_Values>
+<m_GroupName text="Zocalo"/>
+<m_MeshName text="Cube.001"/>
+<m_StateName text="Default"/>
+</Element>
+<Element>
+<m_Values>
+<m_Values>
+<Element class="AssetObjects:ObjectValue">
+<m_ObjectName text="Piedra"/>
+<m_eObjectType>MATERIAL</m_eObjectType>
+<m_ParamName text="Material"/>
+</Element>
+</m_Values>
+</m_Values>
+<m_GroupName text="Piedra"/>
+<m_MeshName text="Cube.001"/>
+<m_StateName text="Default"/>
+</Element>
+<Element>
+<m_Values>
+<m_Values>
+<Element class="AssetObjects:ObjectValue">
+<m_ObjectName text="Bandera"/>
+<m_eObjectType>MATERIAL</m_eObjectType>
+<m_ParamName text="Material"/>
+</Element>
+</m_Values>
+</m_Values>
+<m_GroupName text="Bandera"/>
+<m_MeshName text="Cube.002"/>
+<m_StateName text="Default"/>
+</Element>
+</m_GroupStates>
+</Element>
+</m_ModelInstances>
+</m_GeometrySet>
