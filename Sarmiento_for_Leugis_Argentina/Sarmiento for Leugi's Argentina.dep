@@ -26,7 +26,10 @@
 		</Element>
 		<Element>
 			<ConsumerName text="Landmarks"/>
-			<ArtDefDependencyPaths/>
+			<ArtDefDependencyPaths>
+				<Element text="Landmarks.artdef"/>
+				<Element text="Buildings.artdef"/>
+			</ArtDefDependencyPaths>
 			<LibraryDependencies>
 				<Element text="CityBuildings"/>
 				<Element text="TileBase"/>
@@ -60,7 +63,9 @@
 		</Element>
 		<Element>
 			<ConsumerName text="StrategicView_Sprite"/>
-			<ArtDefDependencyPaths/>
+			<ArtDefDependencyPaths>
+				<Element text="Buildings.artdef"/>
+			</ArtDefDependencyPaths>
 			<LibraryDependencies>
 				<Element text="StrategicView_Sprite"/>
 				<Element text="StrategicView_DirectedAsset"/>
@@ -384,6 +389,19 @@
 		<Element>
 			<ArtDefPath text="Clutter.artdef"/>
 			<ArtDefDependencyPaths/>
+		</Element>
+		<Element>
+			<ArtDefPath text="Landmarks.artdef"/>
+			<ArtDefDependencyPaths>
+				<Element text="Landmarks.artdef"/>
+				<Element text="Buildings.artdef"/>
+			</ArtDefDependencyPaths>
+		</Element>
+		<Element>
+			<ArtDefPath text="Buildings.artdef"/>
+			<ArtDefDependencyPaths>
+				<Element text="Buildings.artdef"/>
+			</ArtDefDependencyPaths>
 		</Element>
 		<Element>
 			<ArtDefPath text="Leaders.artdef"/>

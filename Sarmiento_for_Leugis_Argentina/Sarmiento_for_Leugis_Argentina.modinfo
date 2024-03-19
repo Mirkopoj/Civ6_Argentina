@@ -3,7 +3,7 @@
   <Properties>
     <Name>Sarmiento_for_Leugis_Argentina</Name>
     <Description>Domigo Faustino Sarmiento is a cientific and militaristic leader for Leugi's Argentina.</Description>
-    <Created>1710891433</Created>
+    <Created>1710880358</Created>
     <Teaser>Adds Domingo Faustino Sarmiento as an alternative leader for Leugi's Argentina.</Teaser>
     <Authors>TheOtherOne</Authors>
     <SpecialThanks>LaRipea</SpecialThanks>
@@ -47,11 +47,18 @@
     </UpdateIcons>
     <UpdateArt id="Sarmiento_Art_MRK">
       <File>Sarmiento for Leugi's Argentina.dep</File>
+      <File>ArtDefs/Buildings.artdef</File>
+      <File>ArtDefs/Landmarks.artdef</File>
     </UpdateArt>
     <AddGameplayScripts id="Sarmiento_Biblio_lua_MRK">
       <File>lua/Biblio.lua</File>
       <File>lua/SarmientoCombat.lua</File>
     </AddGameplayScripts>
+    <ImportFiles id="Sarmient_Import_Biblio">
+      <File>Geometries/DIS_CMP_MRK_BiblioPopular.fgx</File>
+      <File>Geometries/DIS_CMP_MRK_BiblioPopular.geo</File>
+      <File>Assets/DIS_CMP_MRK_BiblioPopular_Asset.ast</File>
+    </ImportFiles>
   </InGameActions>
   <Files>
     <File>ArtDefs/Buildings.artdef</File>
@@ -65,10 +72,40 @@
     <File>Geometries/DIS_CMP_MRK_BiblioPopular_GeometrySet.xml</File>
     <File>lua/Biblio.lua</File>
     <File>lua/SarmientoCombat.lua</File>
+    <File>Platforms/MacOS/BLPs/landmarks/hero_buildings.blp</File>
     <File>Platforms/MacOS/BLPs/LeaderFallbacks.blp</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Burn_BaseColor</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Burn_G</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_CMP_Base_B_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Foundation_Modern_01_B_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_A</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_E</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_G</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_M</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_N0</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_N1</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Foundation_Modern_01_G</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Foundation_Modern_01_N0</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Foundation_Modern_01_N1</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_ProceduralNoiseTexture2D_0x304656c5</File>
     <File>Platforms/MacOS/BLPs/UIIcons.blp</File>
     <File>Platforms/MacOS/BLPs/UILeaders.blp</File>
+    <File>Platforms/Windows/BLPs/landmarks/hero_buildings.blp</File>
     <File>Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_BaseColor</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_CMP_Base_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Foundation_Modern_01_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_A</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_E</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_M</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_N0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CMP_Base_N1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Foundation_Modern_01_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Foundation_Modern_01_N0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Foundation_Modern_01_N1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_ProceduralNoiseTexture2D_0x304656c5</File>
     <File>Platforms/Windows/BLPs/UIIcons.blp</File>
     <File>Platforms/Windows/BLPs/UILeaders.blp</File>
     <File>Sarmiento for Leugi's Argentina.dep</File>
@@ -94,6 +131,7 @@
     <File>Textures/MRK_SARMIENTO_2.dds</File>
     <File>Textures/MRK_SARMIENTO_4.dds</File>
     <File>Textures/MRK_SARMIENTO_4.tex</File>
+    <File>XLPs/hero_buildings.xlp</File>
     <File>XLPs/UIIcons.xlp</File>
     <File>xml/Sarmiento_Config.xml</File>
     <File>xml/Sarmiento_ConfigText.xml</File>

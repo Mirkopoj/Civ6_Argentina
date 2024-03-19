@@ -27,7 +27,9 @@
 		</Element>
 		<Element>
 			<consumerName text="Landmarks"/>
-			<relativeArtDefPaths/>
+			<relativeArtDefPaths>
+				<Element text="Landmarks.artdef"/>
+			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="CityBuildings"/>
 				<Element text="TileBase"/>
@@ -61,7 +63,9 @@
 		</Element>
 		<Element>
 			<consumerName text="StrategicView_Sprite"/>
-			<relativeArtDefPaths/>
+			<relativeArtDefPaths>
+				<Element text="Buildings.artdef"/>
+			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="StrategicView_Sprite"/>
 				<Element text="StrategicView_DirectedAsset"/>
@@ -488,7 +492,9 @@
 		</Element>
 		<Element>
 			<libraryName text="TileBase"/>
-			<relativePackagePaths/>
+			<relativeArtDefPaths>
+				<Element text="landmarks/hero_buildings"/>
+			</relativeArtDefPaths>
 		</Element>
 		<Element>
 			<libraryName text="UILensAsset"/>
